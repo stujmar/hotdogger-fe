@@ -1,0 +1,21 @@
+.rootStyle {
+    
+}
+
+.wrapper {
+    width:100%;
+    margin: 0 auto;
+}
+
+.bg {
+    background: url('../../resources/bg.png');
+    background-size: 55px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+@media only screen and (min-width: 700px) {
+    .wrapper {
+        width: 80%;
+    }
+}

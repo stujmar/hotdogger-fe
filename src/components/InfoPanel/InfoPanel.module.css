@@ -1,0 +1,28 @@
+.infoBody {
+    display: block;
+    height: 125px;
+    width: 100%;
+    background: rgb(255, 94, 0);
+    border-bottom: 2px solid black;
+}
+
+
+.dogCount {
+    grid-area: header;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.infoWrap {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    height:125px;
+    margin: 0 auto;
+    width: 80%;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-areas: "header header";
+}
+
