@@ -8,7 +8,7 @@ import { bg, wrapper, rootStyle} from './App.module.css';
 import './App.css';
 import Home from '../Home';
 import Header from '../Header/Header';
-import Footer from '../Footer';
+import Footer from '../Footer/Footer';
 import UpgradePanel from '../UpgradePanel';
 import BadgePanel from '../BadgePanel';
 import NoMatch from '../NoMatch';
