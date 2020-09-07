@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import {grayScreen, loginPanel, header, button, formBody, formItem, signupPanel} from './LoginModal.module.css';
 
-const LoginModal = () => {
+const LoginModal = ( {onClose, status} ) => {
 
     const on = {display: "block"};
     const off = {display: "none"};
 
-
+    const [modalToggle, setModalToggle] = useState(true);
     const [loginView, setLoginView] = useState(on);
     const [signupView, setSignupView] = useState(off);
     const [ activePanel, setActivePanel] = useState('login');
@@ -16,11 +16,19 @@ const LoginModal = () => {
     });
     
     useEffect(() => {
+        console.log("active panel check", modalToggle);
         activePanel === 'create' ? setSignupView(on) : setSignupView(off);
         activePanel === 'login' ? setLoginView(on) : setLoginView(off);
-        console.log(signupView, loginView)
+        if (activePanel === 'guest') {    
+            onClose();  
+        } 
     }, [activePanel])
 
+
+    useEffect(() => {
+        setModalToggle(status);
+        console.log("modal status checker", modalToggle);
+    }, [status])
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -44,7 +52,7 @@ const LoginModal = () => {
     }
 
     return (
-        <div className={grayScreen}>
+        <div style={{display: modalToggle ? "block" : "none"}} className={grayScreen}>
             <div style={loginView} className={loginPanel}>
             <h2 className={header}>Welcome to HotDogger.</h2>
                 <form className={formBody}>

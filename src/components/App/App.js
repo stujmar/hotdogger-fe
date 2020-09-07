@@ -16,7 +16,7 @@ import LoginModal from '../LoginModal/LoginModal';
 
 function App() {
 
-
+  const [loginModal, setLoginModal] = useState(true)
   let [count, setCount] = useState(0);
   let [click, setClick] = useState(0);
   let [timerRun, setTimerRun] = useState(false);
@@ -44,10 +44,15 @@ function App() {
     clearInterval(myCounter);
   }
 
+  const handleLoginModal = () => {
+    console.log('we got to the onClose handler');
+    setLoginModal(false);
+  }
+
   return (
       <Router>
     <div className={rootStyle}>
-      <LoginModal />
+      <LoginModal status={loginModal} onClose={handleLoginModal} />
       <div className={bg}>
         {click}
         <button onClick={startHandler}>Start</button>
