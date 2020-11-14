@@ -57,7 +57,7 @@ function App() {
       <div className={bg}>
         {click}
         <button onClick={startHandler}>Start</button>
-        <Playground/>
+        <Playground label="Playground"/>
         <button onClick={stopHandler}>Stop</button>
         {count}
         <Header />
