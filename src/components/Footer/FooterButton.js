@@ -1,11 +1,14 @@
 import React from 'react';
+import {buttonStyle} from './FooterButton.module.css'
 
-const FooterButton = () => {
+const FooterButton = ({copy, onClick, style}) => {
+
+    const handleClick = () => {
+        onClick();
+    }
 
     return (
-        <div>
-            This is a footer button.
-        </div>
+        <button className={buttonStyle} style={style} onClick={handleClick} type="button">{copy}</button>
     )
 }
 

@@ -32,6 +32,7 @@ const LoginModal = ( {onClose, status} ) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
         setActivePanel('login');
     }
 
@@ -58,7 +59,7 @@ const LoginModal = ( {onClose, status} ) => {
                 <form className={formBody}>
                     <input className={formItem} type="text" placeholder="email" />
                     <input className={formItem} type="text" placeholder="password"/>
-                    <button onClick={handleSubmit} className={button} type="submit">Login</button>
+                    <button onClick={handleSubmit} name="submit" className={button} type="submit">Login</button>
                 </form>
                 <h3 className={header}>Don't have an Account?</h3>
                 <button onClick={handleCreate} className={button}>Create Account</button>

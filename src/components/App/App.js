@@ -13,6 +13,7 @@ import UpgradePanel from '../UpgradePanel';
 import BadgePanel from '../BadgePanel';
 import NoMatch from '../NoMatch';
 import LoginModal from '../LoginModal/LoginModal';
+import Playground from '../Playground';
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
       <div className={bg}>
         {click}
         <button onClick={startHandler}>Start</button>
+        <Playground/>
         <button onClick={stopHandler}>Stop</button>
         {count}
         <Header />
