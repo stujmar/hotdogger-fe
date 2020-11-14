@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 
 
-const Playground = (props) => {
+const Playground = ({label}) => {
     const [counter, setCounter] = useState(0);
     const handleClick = () => {setCounter(counter+1)}
     return (
-        <div>{`${props.label}`}
+        <div>{`${label}`}
         {counter}
         <button onClick={handleClick}>Click me</button>
         </div>
