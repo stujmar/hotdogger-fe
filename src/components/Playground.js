@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 import Button from "./Button.js"
 
-const Playground = ({label}) => {
+const Playground = ({label, amount}) => {
     const [counter, setCounter] = useState(0);
-    const handleClick = () => {setCounter(counter+1)}
+
+    const handleClick = () => {setCounter(counter+amount)}
+    
     return (
         <div>{`${label}`}
         {counter}
