@@ -2,7 +2,7 @@ import React from "react"
 
 const PlaygroundButton = (props) => {
 
-    const handleClick = () => props.onClickFunction(props.increment);
+    const handleClick = () => props.onClick(props.increment);
 
     return (
         <button onClick={handleClick}>
