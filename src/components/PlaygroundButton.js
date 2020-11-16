@@ -1,8 +1,11 @@
 import React from "react"
 
-const PlaygroundButton = () => {
+const PlaygroundButton = (props) => {
+
+    const handleClick = () => props.onClickFunctioin(props.increment)
+
     return (
-        <button></button>
+        <button onClick={handleClick}></button>
     )
 }
 
