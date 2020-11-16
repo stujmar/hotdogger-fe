@@ -5,7 +5,9 @@ const PlaygroundButton = (props) => {
     const handleClick = () => props.onClickFunctioin(props.increment)
 
     return (
-        <button onClick={handleClick}></button>
+        <button onClick={handleClick}>
+            +{props.increment}
+        </button>
     )
 }
 

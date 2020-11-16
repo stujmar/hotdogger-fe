@@ -51,28 +51,28 @@ function App() {
   }
 
   return (
-      <Router>
-    <div className={rootStyle}>
-      <LoginModal status={loginModal} onClose={handleLoginModal} />
-      <div className={bg}>
-        {click}
-        <button onClick={startHandler}>Start</button>
-        <Playground label="Playground"/>
-        <button onClick={stopHandler}>Stop</button>
-        {count}
-        <Header />
-        <div className={wrapper}> 
-        <Switch>
-          <Route exact path="/" render={() => <Home /> }/>
-          <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
-          <Route path="/badges"  render={() => <BadgePanel /> }/>
-          <Route path="*"> <NoMatch /> </Route>
-        </Switch>
+    <Router>
+      <Playground label="Playground"/>
+      {/* <div className={rootStyle}>
+        <LoginModal status={loginModal} onClose={handleLoginModal} />
+        <div className={bg}>
+          {click}
+          <button onClick={startHandler}>Start</button>
+          <button onClick={stopHandler}>Stop</button>
+          {count}
+          <Header />
+          <div className={wrapper}> 
+          <Switch>
+            <Route exact path="/" render={() => <Home /> }/>
+            <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
+            <Route path="/badges"  render={() => <BadgePanel /> }/>
+            <Route path="*"> <NoMatch /> </Route>
+          </Switch>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </div>
-      </Router>
+      </div> */}
+    </Router>
   );
 }
 
