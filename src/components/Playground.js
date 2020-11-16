@@ -13,6 +13,10 @@ const Playground = ({label, amount}) => {
         <Button />
         <button onClick={handleClick}>Click me</button>
         <PlaygroundButton onClick={increment} increment={1}/>
+        <PlaygroundButton onClick={increment} increment={5}/>
+        <PlaygroundButton onClick={increment} increment={10}/>
+        <PlaygroundButton onClick={increment} increment={50}/>
+        <PlaygroundButton onClick={increment} increment={100}/>
         </div>
     )
 }
