@@ -6,7 +6,7 @@ const Playground = ({label, amount}) => {
     const [counter, setCounter] = useState(0);
 
     const handleClick = () => {setCounter(counter+amount)}
-    
+    const increment = (value) => setCounter(couter+value);
     return (
         <div>{`${label}`}
         {counter}
