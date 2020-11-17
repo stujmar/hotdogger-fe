@@ -4,7 +4,7 @@ import PlaygroundButton from "./PlaygroundButton.js";
 
 const Playground = ({label, amount}) => {
     const [counter, setCounter] = useState(0);
-
+    const [time, setTime] = useState("");
     const handleClick = () => {setCounter(counter+amount)}
     const increment = (value) => setCounter(counter+value);
     let clock;
