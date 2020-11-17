@@ -7,8 +7,14 @@ const Playground = ({label, amount}) => {
 
     const handleClick = () => {setCounter(counter+amount)}
     const increment = (value) => setCounter(counter+value);
-    let clock = (new Date).toLocaleTimeString();
+    let clock;
     
+    const render = () => {
+        clock =(new Date).toLocaleTimeString();
+    }
+    
+    setInterval(render(), 1000);
+
     return (
         <div>{`${label}`}
             {counter}
@@ -16,6 +22,7 @@ const Playground = ({label, amount}) => {
             <button onClick={handleClick}>Click me</button>
             <input></input>
             {clock}
+            {(new Date).toLocaleTimeString()}
             <PlaygroundButton onClick={increment} increment={1}/>
             <PlaygroundButton onClick={increment} increment={5}/>
             <PlaygroundButton onClick={increment} increment={10}/>
