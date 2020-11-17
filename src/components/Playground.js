@@ -5,15 +5,19 @@ import PlaygroundButton from "./PlaygroundButton.js";
 const Playground = ({label, amount}) => {
     const [counter, setCounter] = useState(0);
     const [time, setTime] = useState("");
-    const handleClick = () => {setCounter(counter+amount)}
+    const [num, setNum] = useState(0);
+
+    const handleClick = () => {setCounter(counter+amount)};
     const increment = (value) => setCounter(counter+value);
-    let clock;
     
-    const render = () => {
+    
+
+    // Just making sure render isn't some sort of keyword.
+    const slender = () => {
         setTime((new Date).toLocaleTimeString());
     }
     
-    setInterval(render(), 1000);
+    setInterval(slender(), 1000);
 
     return (
         <div>{`${label}`}
