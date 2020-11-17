@@ -14,7 +14,7 @@ const Playground = ({label, amount}) => {
 
     // Just making sure render isn't some sort of keyword.
     const slender = () => {
-        setTime((new Date).toLocaleTimeString());
+       setNum(num += 1);
     }
     
     setInterval(slender(), 1000);
@@ -24,7 +24,7 @@ const Playground = ({label, amount}) => {
             {counter}
             <Button />
             <button onClick={handleClick}>Click me</button>
-            {time}
+            {num}
             <input></input>
 
             <PlaygroundButton onClick={increment} increment={1}/>
