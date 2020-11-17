@@ -14,7 +14,7 @@ const Playground = ({label, amount}) => {
 
     // Just making sure render isn't some sort of keyword.
     const slender = () => {
-       setNum(num += 1);
+       setNum(num + 1);
     }
     
     setInterval(slender(), 1000);
