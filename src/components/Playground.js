@@ -9,15 +9,16 @@ const Playground = ({label, amount}) => {
     const increment = (value) => setCounter(counter+value);
     return (
         <div>{`${label}`}
-        {counter}
-        <Button />
-        <button onClick={handleClick}>Click me</button>
-        <PlaygroundButton onClick={increment} increment={1}/>
-        <PlaygroundButton onClick={increment} increment={5}/>
-        <PlaygroundButton onClick={increment} increment={10}/>
-        <PlaygroundButton onClick={increment} increment={50}/>
-        <PlaygroundButton onClick={increment} increment={100}/>
-        <PlaygroundButton onClick={increment} increment={-100}/>
+            {counter}
+            <Button />
+            <button onClick={handleClick}>Click me</button>
+            <input></input>
+            <PlaygroundButton onClick={increment} increment={1}/>
+            <PlaygroundButton onClick={increment} increment={5}/>
+            <PlaygroundButton onClick={increment} increment={10}/>
+            <PlaygroundButton onClick={increment} increment={50}/>
+            <PlaygroundButton onClick={increment} increment={100}/>
+            <PlaygroundButton onClick={increment} increment={-100}/>
         </div>
     )
 }
