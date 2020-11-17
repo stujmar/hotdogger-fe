@@ -10,7 +10,7 @@ const Playground = ({label, amount}) => {
     let clock;
     
     const render = () => {
-        clock =(new Date).toLocaleTimeString();
+        setTime((new Date).toLocaleTimeString());
     }
     
     setInterval(render(), 1000);
@@ -20,9 +20,9 @@ const Playground = ({label, amount}) => {
             {counter}
             <Button />
             <button onClick={handleClick}>Click me</button>
+            {time}
             <input></input>
-            {clock}
-            {(new Date).toLocaleTimeString()}
+
             <PlaygroundButton onClick={increment} increment={1}/>
             <PlaygroundButton onClick={increment} increment={5}/>
             <PlaygroundButton onClick={increment} increment={10}/>
