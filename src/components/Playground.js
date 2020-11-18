@@ -14,13 +14,13 @@ const Playground = ({label, amount}) => {
 
     // Just making sure render isn't some sort of keyword.
     const slender = () => {
-       setNum(num + 1);
+        setInterval(() => {
+            setNum(num + 1) 
+        }
+        , 1000);
     }
     
-    setInterval(() => {
-        setNum(num + 1) 
-    }
-    , 1000);
+    slender();
 
     return (
         <div>{`${label}`}
