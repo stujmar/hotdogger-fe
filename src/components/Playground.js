@@ -17,7 +17,9 @@ const Playground = ({label, amount}) => {
        setNum(num + 1);
     }
     
-    setInterval(slender(), 1000);
+    // setInterval(
+    //     setNum(num + 1) 
+    // , 1000);
 
     return (
         <div>{`${label}`}
