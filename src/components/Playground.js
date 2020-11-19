@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Button from "./Button.js"
 import PlaygroundButton from "./PlaygroundButton.js";
+import Test from "./Test.js"
 
 const Playground = ({label, amount}) => {
     const [counter, setCounter] = useState(0);
@@ -20,22 +21,29 @@ const Playground = ({label, amount}) => {
         , 1000);
     }
     
+    const logger = () => {
+        console.log('button press');
+    }
+
     slender();
 
     return (
         <div>{`${label}`}
-            {counter}
+            <Test name={"Liz"}/>
+            <Test name={"Stu"}/>
+            <Test name={"Kitty"}/>
+            {/* {counter}
             <Button />
             <button onClick={handleClick}>Click me</button>
             {num}
             <input></input>
-            <button>CLICK ME</button>
+            <button onClick={logger}>CLICK ME</button>
             <PlaygroundButton onClick={increment} increment={1}/>
             <PlaygroundButton onClick={increment} increment={5}/>
             <PlaygroundButton onClick={increment} increment={10}/>
             <PlaygroundButton onClick={increment} increment={25}/>
             <PlaygroundButton onClick={increment} increment={100}/>
-            <PlaygroundButton onClick={increment} increment={-100}/>
+            <PlaygroundButton onClick={increment} increment={-100}/> */}
         </div>
     )
 }
