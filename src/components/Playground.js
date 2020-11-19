@@ -29,7 +29,7 @@ const Playground = ({label, amount}) => {
             <button onClick={handleClick}>Click me</button>
             {num}
             <input></input>
-
+            <button>CLICK ME</button>
             <PlaygroundButton onClick={increment} increment={1}/>
             <PlaygroundButton onClick={increment} increment={5}/>
             <PlaygroundButton onClick={increment} increment={10}/>
