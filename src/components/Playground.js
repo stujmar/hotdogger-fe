@@ -30,7 +30,7 @@ const Playground = ({label, amount}) => {
             {num}
             <input></input>
 
-            <PlaygroundButton onClick={increment} increment={1}/>
+            <PlaygroundButton onClick={increment} increment={2}/>
             <PlaygroundButton onClick={increment} increment={5}/>
             <PlaygroundButton onClick={increment} increment={10}/>
             <PlaygroundButton onClick={increment} increment={50}/>
