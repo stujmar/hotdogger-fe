@@ -25,7 +25,7 @@ const Playground = ({label, amount}) => {
         console.log('button press');
     }
 
-    slender();
+    // slender();
 
     return (
         <div>{`${label}`}
