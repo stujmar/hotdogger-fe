@@ -5,6 +5,16 @@ const Test = ({name}) => {
     let currentName = name + "!";
     {{{}}};
 
+    let error;
+    let data;
+    let apiData = "got data";
+    
+    const getData = () => {
+        data = apiData;
+        return then(data, error);
+    }
+
+
     const looper = () => {
         for (let i = 0; i<= 10; i++) {
             console.log(`In scope i: ${i}`, this);
