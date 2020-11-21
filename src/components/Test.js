@@ -25,7 +25,7 @@ const Test = ({name}) => {
     }
 
     getData();
-    data = "error message";
+    error = "error message";
     getData();
 
     const looper = () => {
