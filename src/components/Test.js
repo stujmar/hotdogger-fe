@@ -20,6 +20,9 @@ const Test = ({name}) => {
     }
 
     const getData = () => {
+        if (data === "") {
+            error = 'error getting data';
+        }
         data = apiData;
         return then(data, error);
     }
