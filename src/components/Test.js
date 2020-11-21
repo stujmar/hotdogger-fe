@@ -9,6 +9,16 @@ const Test = ({name}) => {
     let data;
     let apiData = "got data";
     
+    const then = (data, error) => {
+        setTimeout(() => {
+            if (error !== undefined){
+                console.log(error);
+            } else {
+                console.log(data);
+            }
+        })
+    }
+
     const getData = () => {
         data = apiData;
         return then(data, error);
