@@ -16,7 +16,7 @@ const Test = ({name}) => {
             } else {
                 console.log(data);
             }
-        })
+        }, 2000)
     }
 
     const getData = () => {
@@ -24,6 +24,9 @@ const Test = ({name}) => {
         return then(data, error);
     }
 
+    getData();
+    data = "error message";
+    getData();
 
     const looper = () => {
         for (let i = 0; i<= 10; i++) {
