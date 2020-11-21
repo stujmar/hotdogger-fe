@@ -3,11 +3,10 @@ import React from 'react'
 const Test = ({name}) => {
 
     let currentName = name + "!";
-    {{{}}};
 
     let error;
     let data;
-    let apiData = "got data";
+    let apiData = "";
     
     const then = (data, error) => {
         setTimeout(() => {
