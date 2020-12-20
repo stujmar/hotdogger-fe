@@ -14,6 +14,7 @@ import BadgePanel from '../BadgePanel';
 import NoMatch from '../NoMatch';
 import LoginModal from '../LoginModal/LoginModal';
 import Playground from '../Playground';
+import TickTimer from '../TickTimer';
 
 function App() {
 
