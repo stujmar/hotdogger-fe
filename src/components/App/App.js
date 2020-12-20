@@ -52,7 +52,8 @@ function App() {
 
   return (
     <Router>
-      <Playground label="Playground"/>
+      {/* <Playground label="Playground"/> */}
+      <TickTimer />
       {/* <div className={rootStyle}>
         <LoginModal status={loginModal} onClose={handleLoginModal} />
         <div className={bg}>
