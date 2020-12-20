@@ -6,7 +6,7 @@ const Test = ({name}) => {
 
     let error;
     let data;
-    let apiData = "";
+    let apiData = "got data";
     
     const then = (data, error) => {
         setTimeout(() => {
