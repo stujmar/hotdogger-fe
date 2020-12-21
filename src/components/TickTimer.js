@@ -13,11 +13,16 @@ const TickTimer = () => {
         countDisplay = count;
     }, []);
 
+    const clickHandler = () => {
+        console.log("hello world");
+    }
+
     return (
         <div style={{background: "white", height: "100px", color: "black"}}>
             {`${countDisplay}`}
             {count}
             {nums}
+            <button onClick={clickHandler}>Click Me</button>
         </div>
     )
 }
