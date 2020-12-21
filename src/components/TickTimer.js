@@ -11,15 +11,17 @@ const TickTimer = () => {
 
     useEffect(() => {
         console.log("I'm in a useEffect")
+        setNums([3,2,1]);
     }, []);
 
     const clickHandler = () => {
         console.log("hello world");
-        setCount(6);
+        setCount(count + 1);
     }
 
     return (
         <div style={{background: "white", height: "100px", color: "black"}}>
+            <h1>Hello World</h1>
             {count}
             {countDisplay}
             {nums}
