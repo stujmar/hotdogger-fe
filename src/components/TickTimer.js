@@ -6,12 +6,17 @@ const TickTimer = () => {
     let countDisplay;
 
     const [count, setCount] = useState(5);
-    const [nums, setNums] = useState([1,2,3]);
-    console.log("Hello from Loose is in the Functional Component")
+
+    console.log("Loose in the Functional Component")
 
     useEffect(() => {
+
         console.log("I'm in a useEffect")
-        setNums([3,2,1]);
+
+        setInterval(() => {
+            console.log("Hello from the interval", count);
+        }, 1000)
+        
     }, []);
 
     const clickHandler = () => {
