@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-
+import UseInterval from "../utils/UseInterval"
 
 const TickTimer = () => {
 
@@ -22,6 +22,7 @@ const TickTimer = () => {
     const clickHandler = () => {
         console.log("hello world");
         setCount(count + 1);
+        console.log("UseInterval", UseInterval(5,10));
     }
 
     return (
