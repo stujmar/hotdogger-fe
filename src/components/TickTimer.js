@@ -16,7 +16,7 @@ const TickTimer = () => {
         setInterval(() => {
             console.log("Hello from the interval", count);
         }, 1000)
-        
+
     }, []);
 
     const clickHandler = () => {
@@ -29,7 +29,6 @@ const TickTimer = () => {
             <h1>Hello World</h1>
             {count}
             {countDisplay}
-            {nums}
             <button onClick={clickHandler}>Click Me</button>
         </div>
     )
