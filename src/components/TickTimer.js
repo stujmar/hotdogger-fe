@@ -5,7 +5,8 @@ const TickTimer = () => {
 
     let countDisplay;
 
-    const [count, setCount] = useState(5);
+    const [count, setCount] = useState(0);
+    const [modifier, setModifer] = useState(0);
 
     console.log("Loose in the Functional Component")
 
