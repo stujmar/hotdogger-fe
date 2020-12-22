@@ -6,7 +6,7 @@ const TickTimer = () => {
     let countDisplay;
 
     const [count, setCount] = useState(0);
-    const [modifier, setModifer] = useState(0);
+    const [modifier, setModifier] = useState(0);
 
     console.log("Loose in the Functional Component")
 
@@ -17,12 +17,12 @@ const TickTimer = () => {
     }, []);
 
     UseInterval(() => {
-        setCount(count + 1);
+        setCount(count + modifier);
     }, 1000)
 
     const clickHandler = () => {
         console.log("hello world");
-        setCount(count + 1);
+        setModifier(modifier + 1);
       
     }
 
@@ -30,7 +30,8 @@ const TickTimer = () => {
         <div style={{background: "white", height: "100px", color: "black"}}>
             <h1>Hello World</h1>
             {count}
-            {countDisplay}
+            <br />
+            {modifier}
             <button onClick={clickHandler}>Click Me</button>
         </div>
     )
