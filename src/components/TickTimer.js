@@ -13,16 +13,16 @@ const TickTimer = () => {
 
         console.log("I'm in a useEffect")
 
-        setInterval(() => {
-            console.log("Hello from the interval", count);
-        }, 1000)
-
     }, []);
+
+    UseInterval(() => {
+        setCount(count + 1);
+    }, 1000)
 
     const clickHandler = () => {
         console.log("hello world");
         setCount(count + 1);
-        console.log("UseInterval", UseInterval(5,10));
+      
     }
 
     return (
