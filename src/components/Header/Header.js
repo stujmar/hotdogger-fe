@@ -1,6 +1,6 @@
 import React, {Fragment } from 'react';
 import { useLocation } from 'react-router-dom';
-import { headerStyle, superTitle, title, buttonBar, grayBar, grayButton, menuBar, menuParent, logoStyle, darker } from '../Header/Header.module.css';
+import { buttonBar, grayBar, grayButton, menuBar, menuParent, logoStyle, darker, background } from '../Header/Header.module.css';
 import Button from '../Button';
 import InfoPanel from '../InfoPanel/InfoPanel';
 
@@ -46,10 +46,7 @@ const Header = () => {
                     </div>
                     <div className={menuBar}></div>
                 </div>
-                <div className={headerStyle}>
-                    <div className={superTitle}>the original</div>
-                    <h1 className={title}>HotDogger</h1>
-                </div>
+                <div className={`${background}`}></div>
                     <InfoPanel />
                     <div className={buttonBar}>
                             <Button id={0} style={upgradeStyle} path='/upgrades' content='Upgrades'/>
