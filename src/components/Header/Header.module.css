@@ -5,10 +5,14 @@
 }
 
 .menuParent {
-
+  position: relative;
 }
 
 .logoStyle {
+  top: 5px;
+  left: 25px;
+  box-shadow: 0 0 5px black;
+  position: absolute;
   display: block;
   height: 175px;
   width: 175px;
