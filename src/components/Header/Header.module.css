@@ -37,16 +37,21 @@
   justify-content: flex-end;
 }
 
-.grayButton {
+.grayButton, .darker {
   font-family: "monospace", sans-serif;
-  color: white;
-  background: rgb(66, 66, 66);
+  color: rgb(236, 236, 236);
+  background: #333;
   border: none;
   padding: 0 25px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.grayButton:hover {
+
+.darker{
+ background: #222;
+}
+
+.grayButton:hover, .darker:hover {
   color: rgb(230, 91, 36);
 }
 /* New Styles End */
