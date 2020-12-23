@@ -9,6 +9,12 @@
 }
 
 .logoStyle {
+  display: block;
+  height: 175px;
+  width: 175px;
+  background: url("../../resources/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
