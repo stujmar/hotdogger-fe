@@ -28,7 +28,7 @@ function App() {
       {/* <Playground label="Playground"/> */}
       {/* <TickTimer /> */}
       <div className={rootStyle}>
-        <LoginModal status={loginModal} onClose={handleLoginModal} />
+        {/* <LoginModal status={loginModal} onClose={handleLoginModal} /> */}
         <div className={bg}>
           <Header />
           <div className={wrapper}> 
