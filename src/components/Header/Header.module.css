@@ -21,19 +21,32 @@
   background-size: cover;
 }
 
-.menuBar {
-  display: block;
-  height: 100px;
+.menuBar, .grayBar {
+  display: flex;
   width: 100%;
+}
+
+.menuBar {
+  height: 100px;
   background: #FFDD00;
+  justify-content: space-around;
+  padding: 0 50px 0 175px;
+}
+
+.menuButton {
+  color: #0065AA;
+  background:none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "monospace", sans-serif;
+  font-size: 1.5rem;
 }
 
 .grayBar {
-  display: flex;
-  height: 45px;
-  width: 100%;
-  background:#333;
   justify-content: flex-end;
+  height: 45px;
+  background:#333;
 }
 
 .grayButton, .darker {

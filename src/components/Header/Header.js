@@ -1,6 +1,6 @@
 import React, {Fragment } from 'react';
 import { useLocation } from 'react-router-dom';
-import { buttonBar, grayBar, grayButton, menuBar, menuParent, logoStyle, darker, background } from '../Header/Header.module.css';
+import { buttonBar, grayBar, grayButton, menuBar, menuParent, logoStyle, darker, background, menuButton } from '../Header/Header.module.css';
 import Button from '../Button';
 import InfoPanel from '../InfoPanel/InfoPanel';
 
@@ -44,9 +44,18 @@ const Header = () => {
                         <button className={`${grayButton} ${darker}`}>login</button>
                         <button className={`${grayButton} ${darker}`}>profile</button>
                     </div>
-                    <div className={menuBar}></div>
+                    <div className={menuBar}>
+                        <button className={`${menuButton}`}>HOME</button>
+                        <button className={`${menuButton}`}>UPGRADES</button>
+                        <button className={`${menuButton}`}>BADGES</button>
+                    </div>
                 </div>
-                <div className={`${background}`}></div>
+                
+                <div className={`${background}`}>
+                    <div className="title">Welcome to Hot Dogger</div>
+                    <button>Get Started!</button>
+                    <p>login to track your progress!</p>
+                </div>
                     <InfoPanel />
                     <div className={buttonBar}>
                             <Button id={0} style={upgradeStyle} path='/upgrades' content='Upgrades'/>
