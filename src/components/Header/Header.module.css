@@ -1,5 +1,9 @@
 
 /* New Styles Start */
+* {
+  box-sizing: border-box;
+}
+
 .menuParent {
 
 }
@@ -9,7 +13,10 @@
 }
 
 .menuBar {
-
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: #FFDD00;
 }
 
 .grayBar {
