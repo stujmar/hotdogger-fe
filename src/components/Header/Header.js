@@ -1,6 +1,6 @@
 import React, {Fragment } from 'react';
 import { useLocation } from 'react-router-dom';
-import { headerStyle, superTitle, title, buttonBar, grayBar, menuBar, menuParent, logoStyle } from '../Header/Header.module.css';
+import { headerStyle, superTitle, title, buttonBar, grayBar, grayButton, menuBar, menuParent, logoStyle } from '../Header/Header.module.css';
 import Button from '../Button';
 import InfoPanel from '../InfoPanel/InfoPanel';
 
@@ -37,7 +37,12 @@ const Header = () => {
             <Fragment>
                 <div className={menuParent}>
                     <div className={logoStyle}></div>
-                    <div className={grayBar}></div>
+                    <div className={grayBar}>
+                        <button className={grayButton}>save</button>
+                        <button className={grayButton}>load</button>
+                        <button className={grayButton}>login</button>
+                        <button className={grayButton}>profile</button>
+                    </div>
                     <div className={menuBar}></div>
                 </div>
                 <div className={headerStyle}>
