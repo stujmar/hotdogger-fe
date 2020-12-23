@@ -5,7 +5,7 @@
 }
 
 .logoStyle {
-  
+
 }
 
 .menuBar {
@@ -13,7 +13,10 @@
 }
 
 .grayBar {
-
+  display: block;
+  height: 45px;
+  width: 100%;
+  background:#333;
 }
 
 
