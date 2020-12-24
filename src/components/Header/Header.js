@@ -4,6 +4,7 @@ import { buttonBar, grayBar, grayButton, menuBar, menuParent, logoStyle, darker,
 import Button from '../Button';
 import InfoPanel from '../InfoPanel/InfoPanel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
 
@@ -44,7 +45,7 @@ const Header = () => {
                         <button className={`${grayButton}`}>reset</button>
                         <button className={`${grayButton} ${darker}`}>login</button>
                         <button className={`${grayButton} ${darker}`}>profile</button>
-                        <FontAwesomeIcon icon="coffee" />
+                        <FontAwesomeIcon icon={faShoppingCart} />
                     </div>
                     <div className={menuBar}>
                         <button className={`${menuButton}`}>HOME</button>
