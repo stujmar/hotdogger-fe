@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { buttonBar, grayBar, grayButton, menuBar, menuParent, logoStyle, darker, background, menuButton } from '../Header/Header.module.css';
 import Button from '../Button';
 import InfoPanel from '../InfoPanel/InfoPanel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = () => {
 
@@ -43,6 +44,7 @@ const Header = () => {
                         <button className={`${grayButton}`}>reset</button>
                         <button className={`${grayButton} ${darker}`}>login</button>
                         <button className={`${grayButton} ${darker}`}>profile</button>
+                        <FontAwesomeIcon icon="coffee" />
                     </div>
                     <div className={menuBar}>
                         <button className={`${menuButton}`}>HOME</button>
