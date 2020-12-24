@@ -36,6 +36,8 @@
 .menuButton {
   color: #0065AA;
   background:none;
+  cursor: pointer;
+  outline: none;
   border: none;
   text-transform: uppercase;
   font-weight: bold;
