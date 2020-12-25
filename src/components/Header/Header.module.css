@@ -31,6 +31,7 @@
   height: 100px;
   background: #FFDD00;
   justify-content: flex-end;
+  align-items: center;
   padding: 0 50px 0 175px;
 }
 
@@ -40,12 +41,21 @@
   cursor: pointer;
   outline: none;
   border: none;
-  padding-right:100px;
+  margin-right: 75px;
+  padding: 3px 50px 0;
+  border-radius: 20px;
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 2px;
   font-size: 2rem;
+}
+
+.menuButton:hover {
+  background: #FF624D;
+  color: white;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .grayBar {
