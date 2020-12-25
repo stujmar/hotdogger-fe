@@ -49,9 +49,15 @@ const Header = () => {
                         <button className={`${cart}`}/>
                     </div>
                     <div className={menuBar}>
-                        <button className={`${menuButton}`}>HOME</button>
-                        <button className={`${menuButton}`}>UPGRADES</button>
-                        <button className={`${menuButton}`}>BADGES</button>
+                        <button onClick={() => {
+                            console.log("Let's go home.");
+                        }} className={`${menuButton}`}>HOME</button>
+                        <button onClick={() => {
+                            console.log("Let's Upgrade.")
+                        }} className={`${menuButton}`}>UPGRADES</button>
+                        <button onClick={() => {
+                            console.log("Let's look at Badges.")
+                        }} className={`${menuButton}`}>BADGES</button>
                     </div>
                 </div>
                     <div className={buttonBar}>
