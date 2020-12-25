@@ -24,6 +24,7 @@
 .menuBar, .grayBar {
   display: flex;
   width: 100%;
+  cursor: pointer;
 }
 
 .menuBar {
@@ -48,8 +49,17 @@
 .grayBar {
   justify-content: flex-end;
   height: 45px;
+  padding-right: 5px;
   background:#333;
 }
+
+.cart {
+  padding: 10px 0px;
+  width: 50px;
+}
+
+.cart:hover {
+  filter: invert(57%) sepia(68%) saturate(3146%) hue-rotate(335deg) brightness(100%) contrast(102%);}
 
 .grayButton, .darker {
   font-family: "monospace", sans-serif;
@@ -59,6 +69,7 @@
   padding: 0 25px;
   text-transform: uppercase;
   font-weight: bold;
+  outline: none;
 }
 
 .darker{
@@ -66,7 +77,7 @@
 }
 
 .grayButton:hover, .darker:hover {
-  color: rgb(230, 91, 36);
+  color:#FF624D;
 }
 
 .background {
