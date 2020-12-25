@@ -12,7 +12,7 @@ import Footer from '../Footer/Footer';
 import UpgradePanel from '../UpgradePanel';
 import BadgePanel from '../BadgePanel';
 import NoMatch from '../NoMatch';
-import InfoPanel from ''
+import InfoPanel from '../InfoPanel/InfoPanel'
 import LoginModal from '../LoginModal/LoginModal';
 
 function App() {
