@@ -67,11 +67,6 @@ const Header = () => {
                         }} className={`${badgeStyle}`}>BADGES</button>
                     </div>
                 </div>
-                    {/* <div className={buttonBar}>
-                            <Button id={0} style={upgradeStyle} path='/upgrades' content='Upgrades'/>
-                            <Button id={1} style={homeStyle} path='/' content='Home'/>
-                            <Button id={2} style={badgeStyle} path='/badges' content='Badges'/>
-                    </div> */}
             </Fragment>
         )
     
