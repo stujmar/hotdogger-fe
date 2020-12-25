@@ -1,3 +1,18 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Clean Buttons */
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 /*Body Style*/
 .body {
   height: 100vh;

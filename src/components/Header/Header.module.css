@@ -1,15 +1,4 @@
-
 /* New Styles Start */
-* {
-  box-sizing: border-box;
-}
-
-/* Clean Buttons */
-button {
-  cursor: pointer;
-  outline: none;
-  border: none;
-}
 
 .menuParent {
   position: relative;
