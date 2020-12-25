@@ -4,7 +4,7 @@ import {buttonStyle} from './FooterButton.module.css'
 const FooterButton = ({copy, onClick, style}) => {
 
     const handleClick = () => {
-        onClick();
+        onClick(copy);
     }
 
     return (

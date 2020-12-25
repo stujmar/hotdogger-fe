@@ -31,15 +31,13 @@ function App() {
       <div className={rootStyle}>
         {/* <LoginModal status={loginModal} onClose={handleLoginModal} /> */}
         <div className={bg}>
-          <Header />
-          <div className={wrapper}> 
+          <Header /> 
           <Switch>
             <Route exact path="/" render={() => <Home /> }/>
             <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
             <Route path="/badges"  render={() => <BadgePanel /> }/>
             <Route path="*"> <NoMatch /> </Route>
           </Switch>
-          </div>
           <InfoPanel />
           <Footer />
         </div>
