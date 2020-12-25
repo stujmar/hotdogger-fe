@@ -45,7 +45,8 @@ const Header = () => {
                         <button className={`${grayButton}`}>reset</button>
                         <button className={`${grayButton} ${darker}`}>login</button>
                         <button className={`${grayButton} ${darker}`}>profile</button>
-                        <img className={cart} src={shoppingCart} alt="shopping cart"/>
+                        {/* <img className={cart} src={shoppingCart} alt="shopping cart"/> */}
+                        <button className={`${cart}`}/>
                     </div>
                     <div className={menuBar}>
                         <button className={`${menuButton}`}>HOME</button>

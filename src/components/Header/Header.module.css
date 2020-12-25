@@ -69,8 +69,12 @@ button {
 }
 
 .cart {
-  padding: 10px 0px;
-  width: 50px;
+  margin: auto 10px;
+  width: 30px;
+  height: 30px;
+  background: url(../../resources/shopping_cart.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .cart:hover {
