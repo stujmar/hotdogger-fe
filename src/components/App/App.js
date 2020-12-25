@@ -6,12 +6,13 @@ import {
 } from "react-router-dom";
 import { bg, wrapper, rootStyle} from './App.module.css';
 import './App.css';
-import Home from '../Home';
+import Home from '../Home/Home';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import UpgradePanel from '../UpgradePanel';
 import BadgePanel from '../BadgePanel';
 import NoMatch from '../NoMatch';
+import InfoPanel from ''
 import LoginModal from '../LoginModal/LoginModal';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
             <Route path="*"> <NoMatch /> </Route>
           </Switch>
           </div>
+          <InfoPanel />
           <Footer />
         </div>
       </div>

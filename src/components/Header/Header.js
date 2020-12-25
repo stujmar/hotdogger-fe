@@ -54,13 +54,6 @@ const Header = () => {
                         <button className={`${menuButton}`}>BADGES</button>
                     </div>
                 </div>
-                
-                <div className={`${background}`}>
-                    <div className="title">Welcome to Hot Dogger</div>
-                    <button>Get Started!</button>
-                    <p>login to track your progress!</p>
-                </div>
-                    <InfoPanel />
                     <div className={buttonBar}>
                             <Button id={0} style={upgradeStyle} path='/upgrades' content='Upgrades'/>
                             <Button id={1} style={homeStyle} path='/' content='Home'/>
