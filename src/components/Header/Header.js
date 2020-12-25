@@ -38,7 +38,7 @@ const Header = () => {
         return (
             <Fragment>
                 <div className={menuParent}>
-                    <div className={logoStyle}></div>
+                    <button className={logoStyle}></button>
                     <div className={grayBar}>
                         <button className={`${grayButton}`}>save</button>
                         <button className={`${grayButton}`}>load</button>
