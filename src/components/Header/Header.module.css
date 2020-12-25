@@ -43,7 +43,7 @@
   font-size: 2rem;
 }
 
-.menuButton:hover {
+.menuButton:hover, .activeButton {
   background: #FF624D;
   color: white;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
