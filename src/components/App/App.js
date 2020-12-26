@@ -9,7 +9,7 @@ import './App.css';
 import Home from '../Home/Home';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import UpgradePanel from '../UpgradePanel';
+import UpgradePanel from '../Upgrades/UpgradePanel';
 import BadgePanel from '../BadgePanel';
 import NoMatch from '../NoMatch';
 import InfoPanel from '../InfoPanel/InfoPanel'

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {wrapper} from '../styles/BaseStyles.module.css'
-import { upgradeData } from '../data/UpgradeData';
+import {wrapper} from '../../styles/BaseStyles.module.css'
+import { upgradeData } from '../../data/UpgradeData';
 import Upgrade from './Upgrade';
 
 const UpgradePanel = (props) => {

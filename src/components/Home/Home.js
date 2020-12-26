@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
 import  { background } from './Home.module.css'
-import Hotdog from '../Hotdog';
 
 const Home = () => {
     return (
