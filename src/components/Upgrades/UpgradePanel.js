@@ -1,8 +1,9 @@
 import React from 'react';
 
-import {wrapper} from '../../styles/BaseStyles.module.css'
+import {dataStyle} from './UpgradePanel.module.css'
 import { upgradeData } from '../../data/UpgradeData';
 import Upgrade from './Upgrade';
+import { Fragment } from 'react';
 
 const UpgradePanel = (props) => {
 
@@ -27,9 +28,11 @@ const UpgradePanel = (props) => {
     }
 
         return (
-            <div className={wrapper}>
+            <div>
                 <div className='sideHeader'>Upgrade Header</div>
-            {displayArray}
+                <div className={dataStyle}>
+                    {displayArray}
+                </div>
             </div>
         )
 }
