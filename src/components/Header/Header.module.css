@@ -22,9 +22,10 @@
 
 .menuBar {
   height: 150px;
+  padding: 5px;
   background: #FFDD00;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -88,6 +89,7 @@
 @media only screen and (min-width: 700px) {
   .menuBar {
     flex-direction: row;
+    justify-content: flex-end;
     height: 100px;
     padding: 0 50px 0 175px;
   }
