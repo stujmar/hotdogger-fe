@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { burgerBar, hamburger, mobileLogo, on, off } from './BurgerBar.module.css'
+import { Fragment } from 'react';
+import { burgerBar, hamburger, mobileLogo, on, off, grayScreen } from './BurgerBar.module.css'
 
 const BurgerBar = ({ toggle, onClick }) => {
 
@@ -25,10 +26,15 @@ const BurgerBar = ({ toggle, onClick }) => {
     }
 
     return (
+        <Fragment>
+        <div style={{display: toggle ? "block" : "none"}} className={grayScreen}>
+
+        </div>
         <button onClick={toggleHandler} className={burgerBar}>
             <div className={mobileLogo}></div>
         <div className={menuStyle}></div>
         </button>
+        </Fragment>
     )
 }
 
