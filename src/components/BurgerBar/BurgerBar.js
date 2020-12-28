@@ -4,13 +4,6 @@ import { grayButton, darker, cart, burgerBar, hamburger, mobileLogo, on, off, gr
 
 const BurgerBar = ({ toggle, onClick }) => {
 
-    // const [menuStyle, setMenuStyle] = useState(`${hamburger} ${on}`);
-
-    // if (toggle && menuStyle == `${hamburger} ${off}`) {
-    //     setMenuStyle(`${hamburger} ${on}`); 
-    // } else if (!toggle && menuStyle == `${hamburger} ${on}`) {
-    //     setMenuStyle(`${hamburger} ${off}`);
-    // }
 
     let menuStyle = `${hamburger} ${off}`;
     let menuItemsToggle = `${grayScreen} ${displayNone}`;
