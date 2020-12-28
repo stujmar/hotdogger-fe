@@ -6,6 +6,7 @@ import InfoPanel from '../InfoPanel/InfoPanel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import shoppingCart from '../../resources/shopping_cart.svg'
 import { useHistory } from "react-router-dom";
+import BurgerBar from '../BurgerBar/BurgerBar';
 
 const Header = () => {
     const history = useHistory();
@@ -41,6 +42,7 @@ const Header = () => {
 
         return (
             <Fragment>
+            <BurgerBar />
                 <div className={menuParent}>
                     <button className={logoStyle}></button>
                     <div className={grayBar}>
