@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Fragment } from 'react';
-import { grayButton, darker, cart, burgerBar, hamburger, mobileLogo, on, off, grayScreen, menuItems } from './BurgerBar.module.css'
+import { grayButton, darker, cart, burgerBar, hamburger, mobileLogo, on, off, grayScreen, menuItems, displayBlock, displayNone } from './BurgerBar.module.css'
 
 const BurgerBar = ({ toggle, onClick }) => {
 
@@ -13,11 +13,14 @@ const BurgerBar = ({ toggle, onClick }) => {
     // }
 
     let menuStyle = `${hamburger} ${off}`;
+    let menuItemsToggle = `${grayScreen} ${displayNone}`;
 
     if (toggle && menuStyle == `${hamburger} ${off}`) {
         menuStyle = `${hamburger} ${on}`; 
+        menuItemsToggle = `${grayScreen} ${displayBlock}`
     } else if (!toggle && menuStyle == `${hamburger} ${on}`) {
         menuStyle = `${hamburger} ${off}`;
+        menuItemsToggle = `${grayScreen} ${displayNone}`
     }
  
     const toggleHandler = () => {
@@ -26,7 +29,7 @@ const BurgerBar = ({ toggle, onClick }) => {
 
     return (
         <Fragment>
-        <div style={{display: toggle && window.innerWidth <= 700 ? "block" : "none"}} className={grayScreen}>
+        <div  className={menuItemsToggle}>
             <div className={menuItems}>
                 <button className={`${grayButton}`}>save</button>
                 <button className={`${grayButton}`}>load</button>
