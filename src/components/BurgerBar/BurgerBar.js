@@ -3,15 +3,22 @@ import { burgerBar, hamburger, mobileLogo, on, off } from './BurgerBar.module.cs
 
 const BurgerBar = ({ toggle, onClick }) => {
 
-    const [menuStyle, setMenuStyle] = useState(`${hamburger} ${on}`);
+    // const [menuStyle, setMenuStyle] = useState(`${hamburger} ${on}`);
+
+    // if (toggle && menuStyle == `${hamburger} ${off}`) {
+    //     setMenuStyle(`${hamburger} ${on}`); 
+    // } else if (!toggle && menuStyle == `${hamburger} ${on}`) {
+    //     setMenuStyle(`${hamburger} ${off}`);
+    // }
+
+    let menuStyle = `${hamburger} ${off}`;
 
     if (toggle && menuStyle == `${hamburger} ${off}`) {
-        console.log("going on");
-        setMenuStyle(`${hamburger} ${on}`); 
+        menuStyle = `${hamburger} ${on}`; 
     } else if (!toggle && menuStyle == `${hamburger} ${on}`) {
-        console.log("going off");
-        setMenuStyle(`${hamburger} ${off}`);
+        menuStyle = `${hamburger} ${off}`;
     }
+    
         
     const toggleHandler = () => {
         onClick();
