@@ -10,10 +10,31 @@
     
   }
 
-  .title {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.getStarted {
+  background: #0065AA;
+  color: white;
+  padding: 8px 10px;
+  position: relative;
+}
+
+.getStarted::after {
+  content: '';
+  position:absolute;
+  top:0;
+  width: 0;
+  height: 0;
+
+  background: transparent;
+  border-top: 16px solid #0065AA;
+  border-bottom: 15px solid #0065AA;
+  border-left: 10px solid #0065AA;
+  border-right: 10px solid transparent;
+}
 
 @media only screen and (min-width: 700px) {
 
