@@ -46,16 +46,59 @@
     z-index: 10;
     color: green;
     overflow: auto;
-    padding-top: 10%;
+    padding-top: 20%;
     box-sizing: border-box;
     z-index: 1;
     backdrop-filter: blur(3px);
 } 
 
+.menuItems {
+    /* width: 200px; */
+    height: 300px;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.grayButton, .darker {
+    font-family: "monospace", sans-serif;
+    color: rgb(236, 236, 236);
+    background: #333;
+    border: none;
+    padding: 0 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    height: 45px;
+    font-size: 1.25rem;
+    border-bottom: 1px white solid;
+  }
+
+  .cart {
+    margin: 10px auto;
+    width: 30px;
+    height: 50px;
+    background: url(../../resources/shopping_cart.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .darker{
+   background: #222;
+  }
+  
+  .grayButton:hover, .darker:hover {
+    color:#FF624D;
+  }
+
 
 
 @media only screen and (min-width: 700px) {
     .burgerBar {
+        display: none;
+    }
+
+    .grayScreen {
         display: none;
     }
 }
