@@ -1,0 +1,15 @@
+.burgerBar {
+    display: block;
+    width: 100%;
+    background: red;
+    height: 25px;
+}
+
+@media only screen and (min-width: 700px) {
+    .burgerBar {
+        display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
