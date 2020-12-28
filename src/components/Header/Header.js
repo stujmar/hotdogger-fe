@@ -42,7 +42,7 @@ const Header = () => {
 
         return (
             <Fragment>
-            <BurgerBar />
+            <BurgerBar toggle={true}/>
                 <div className={menuParent}>
                     <button className={logoStyle}></button>
                     <div className={grayBar}>

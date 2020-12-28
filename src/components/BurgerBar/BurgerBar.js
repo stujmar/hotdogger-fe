@@ -1,11 +1,14 @@
 import React from 'react'
-import { burgerBar, hamburger, mobileLogo } from './BurgerBar.module.css'
+import { burgerBar, hamburger, mobileLogo, on, off } from './BurgerBar.module.css'
 
-const BurgerBar = () => {
+const BurgerBar = (toggle) => {
+
+    let menuStyle = toggle ? `${hamburger} ${on}` : `${hamburger} ${off}`
+
     return (
         <div className={burgerBar}>
             <div className={mobileLogo}></div>
-        <div className={hamburger}></div>
+        <div className={menuStyle}></div>
         </div>
     )
 }
