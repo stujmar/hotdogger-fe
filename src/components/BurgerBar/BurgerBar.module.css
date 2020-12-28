@@ -1,8 +1,21 @@
 .burgerBar {
     display: block;
+    position: relative;
     width: 100%;
-    background: red;
-    height: 25px;
+    background: #333;
+    height: 50px;
+}
+
+.mobileLogo {
+    background: url(../../resources/logo_mobile.png);
+    position: absolute;
+    z-index: 50;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.404);
+    width:250px;
+    top: 10px;
+    left: 15px;
+    height: 50px;
+    background-size: cover;
 }
 
 @media only screen and (min-width: 700px) {

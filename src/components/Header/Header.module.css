@@ -21,8 +21,8 @@
 }
 
 .menuBar {
-  height: 150px;
-  padding: 5px;
+  height: 170px;
+  padding: 25px 5px 5px;
   background: #FFDD00;
   flex-direction: column;
   justify-content: space-around;
