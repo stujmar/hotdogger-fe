@@ -2,11 +2,16 @@ import React, {Fragment} from 'react';
 import  { background, title } from './Home.module.css'
 
 const Home = () => {
+
+    const clickHandler = () => {
+        console.log("Getting Started");
+    }
+
     return (
         <Fragment>
             <div className={`${background}`}>
                 <div className={title}>Welcome to Hot Dogger</div>
-                <button>Get Started!</button>
+                <button onClick={clickHandler}>Get Started!</button>
                 <p>or <a href="#">login</a> to track your progress!</p>
             </div>
         </Fragment>
