@@ -9,3 +9,16 @@
     background-position: center;
     
   }
+
+  .title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+@media only screen and (min-width: 700px) {
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
