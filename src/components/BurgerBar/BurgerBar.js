@@ -1,20 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Fragment } from 'react';
 import { grayButton, darker, cart, burgerBar, hamburger, mobileLogo, on, off, grayScreen, menuItems, displayBlock, displayNone } from './BurgerBar.module.css'
 
 const BurgerBar = ({ toggle, onClick }) => {
+          
+    const [menuStyle, setMenuStyle] = useState(`${hamburger} ${off}`);
+    const [menuItemsToggle, setItemsMenu] = useState(`${grayScreen} ${displayNone}`);
 
-
-    let menuStyle = `${hamburger} ${off}`;
-    let menuItemsToggle = `${grayScreen} ${displayNone}`;
-
-    if (toggle && menuStyle == `${hamburger} ${off}`) {
-        menuStyle = `${hamburger} ${on}`; 
-        menuItemsToggle = `${grayScreen} ${displayBlock}`
-    } else if (!toggle && menuStyle == `${hamburger} ${on}`) {
-        menuStyle = `${hamburger} ${off}`;
-        menuItemsToggle = `${grayScreen} ${displayNone}`
-    }
+    useEffect(() => {
+        toggle ? setMenuStyle(`${hamburger} ${on}`) : setMenuStyle(`${hamburger} ${off}`);
+        toggle ? setItemsMenu(`${grayScreen} ${displayBlock}`) : setItemsMenu(`${grayScreen} ${displayNone}`);
+    },[toggle])
  
     const toggleHandler = () => {
         onClick();
