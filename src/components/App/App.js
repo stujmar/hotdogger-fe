@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { bg, wrapper, rootStyle} from './App.module.css';
+import { bg, rootStyle} from './App.module.css';
 import './App.css';
 import Home from '../Home/Home';
 import Header from '../Header/Header';
@@ -17,10 +17,22 @@ import LoginModal from '../LoginModal/LoginModal';
 
 function App() {
 
-  const [loginModal, setLoginModal] = useState(true)
+  const [loginModal, setLoginModal] = useState(true);
+  const [user, setUser] = useState({
+    name: "",
+    id: 0,
+  })
+const [game, setGame] = useState({
+  dogs: 0,
+  badges: [{
+    badgeOne: false, 
+    badgeTwo: false}],
+  upgrades: [{ 
+    upgradeOne: false, 
+    upgradeTwo: false}]
+})
 
   const handleLoginModal = () => {
-    console.log('we got to the onClose handler');
     setLoginModal(false);
   }
 
@@ -38,7 +50,7 @@ function App() {
             <Route path="/badges"  render={() => <BadgePanel /> }/>
             <Route path="*"> <NoMatch /> </Route>
           </Switch>
-          <InfoPanel />
+          <InfoPanel dogs={game.dogs}/>
           <Footer />
         </div>
       </div>
