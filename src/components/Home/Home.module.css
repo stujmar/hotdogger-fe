@@ -12,6 +12,7 @@
 
 .title {
   font-weight: bold;
+  margin: 0 0 5px;
   font-size: 1.5rem;
 }
 
@@ -50,6 +51,15 @@
   border-right: 10px solid #0065AA;
   border-left: 10px solid transparent;
 } */
+
+.loginButton {
+  background: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 7px;
+}
 
 @media only screen and (min-width: 700px) {
 

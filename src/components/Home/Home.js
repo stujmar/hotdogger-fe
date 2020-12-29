@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import  { background, getStarted, title } from './Home.module.css'
+import  { background, getStarted, loginButton, title } from './Home.module.css'
 
 const Home = () => {
 
@@ -12,7 +12,7 @@ const Home = () => {
             <div className={`${background}`}>
                 <div className={title}>Welcome to Hot Dogger</div>
                 <button className={getStarted} onClick={clickHandler}>Get Started!</button>
-                <p>or <a href="#">login</a> to track your progress!</p>
+                <p>or <a className={loginButton} href="#">login</a> to track your progress!</p>
             </div>
         </Fragment>
     )
