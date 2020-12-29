@@ -1,0 +1,12 @@
+.matchBody {
+    padding: 25px 0;
+    height: 100vh;
+    text-align: center;
+}
+
+.matchText {
+    background: #333;
+    color:white;
+    text-shadow: none;
+    font-weight: 400;
+}

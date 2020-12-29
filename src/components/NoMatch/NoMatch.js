@@ -1,5 +1,6 @@
 import React from 'react';
-import {useLocation} from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { matchBody, matchText } from './NoMatch.module.css'
 
 const noMatchStyle = {
     textAlign: 'center',
@@ -12,9 +13,9 @@ function NoMatch() {
     let location = useLocation();
   
     return (
-      <div style={noMatchStyle}>
-        <h2>404 page not found</h2>
-        <h3>
+      <div className={matchBody} >
+        <h2 className={matchText} >404 page not found</h2>
+        <h3 className={matchText} >
           No match for <code>{location.pathname}</code>
         </h3>
       </div>
