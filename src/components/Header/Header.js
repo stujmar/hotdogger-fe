@@ -5,6 +5,7 @@ import Button from '../Button';
 import InfoPanel from '../InfoPanel/InfoPanel';
 import shoppingCart from '../../resources/shopping_cart.svg'
 import BurgerBar from '../BurgerBar/BurgerBar';
+import {LoadGame, ResetGame, SaveGame} from '../../utils/GameState'; 
 
 const Header = () => {
     const history = useHistory();
@@ -25,15 +26,27 @@ const Header = () => {
         setMobileMenu(!mobileMenu);
     }
 
+    const saveHandler = () => {
+        SaveGame();
+    };
+
+    const loadHandler = () => {
+        LoadGame();
+    };
+
+    const resetHandler = () => {
+        ResetGame();
+    };
+
         return (
             <Fragment>
             <BurgerBar toggle={mobileMenu} onClick={menuToggler}/>
                 <div className={menuParent}>
                     <button className={logoStyle}></button>
                     <div className={grayBar}>
-                        <button className={`${grayButton}`}>save</button>
-                        <button className={`${grayButton}`}>load</button>
-                        <button className={`${grayButton}`}>reset</button>
+                        <button onClick={saveHandler} className={`${grayButton}`}>save</button>
+                        <button onClick={loadHandler} className={`${grayButton}`}>load</button>
+                        <button onClick={resetHandler} className={`${grayButton}`}>reset</button>
                         <button className={`${grayButton} ${darker}`}>login</button>
                         <button className={`${grayButton} ${darker}`}>profile</button>
                         {/* <img className={cart} src={shoppingCart} alt="shopping cart"/> */}

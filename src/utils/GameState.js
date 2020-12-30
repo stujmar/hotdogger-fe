@@ -1,11 +1,12 @@
-const SaveGame = (gameObject) => {
+export const SaveGame = () => {
     console.log('Game saved.');
 };
 
-const LoadGame = (userId) => {
+export const LoadGame = (userId) => {
     console.log('Game loaded.');
 };
 
-const ResetGame = (userId) => {
+export const ResetGame = (userId) => {
     console.log('Game reset.');
 };
+
