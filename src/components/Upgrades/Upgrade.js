@@ -1,5 +1,5 @@
 import React from 'react';
-import { upgradeTitle, upgradeWrapper, icon } from '../../styles/Upgrade.module.css';
+import { upgradeTitle, upgradeWrapper, icon } from './Upgrade.module.css';
 //import possible images
 import img01 from '../../resources/upgrade_01.png';
 import img02 from '../../resources/upgrade_02.png';
