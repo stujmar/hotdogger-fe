@@ -47,7 +47,7 @@ const Header = () => {
                         <button onClick={saveHandler} className={`${grayButton}`}>save</button>
                         <button onClick={loadHandler} className={`${grayButton}`}>load</button>
                         <button onClick={resetHandler} className={`${grayButton}`}>reset</button>
-                        <button className={`${grayButton} ${darker}`}>login</button>
+                        <button className={`${grayButton} ${darker}`} onClick={() => history.push("/login")}>login</button>
                         <button className={`${grayButton} ${darker}`}>profile</button>
                         {/* <img className={cart} src={shoppingCart} alt="shopping cart"/> */}
                         <button className={`${cart}`}/>
