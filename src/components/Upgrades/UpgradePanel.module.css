@@ -18,6 +18,6 @@
     background:white;
     display: flex;
     flex-flow: row wrap;
-    padding: 75px 25px 200px;
+    padding: 75px 15px 200px;
     background: url(../../resources/hero-upgrade.png);
 }

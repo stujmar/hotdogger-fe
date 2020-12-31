@@ -32,6 +32,7 @@ const UpgradePanel = (props) => {
                 <div className={upgradeHeader}>Upgrade Header</div>
                 <div className={dataStyle}>
                     {displayArray}
+                    {displayArray}
                 </div>
             </div>
         )
