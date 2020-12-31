@@ -1,6 +1,10 @@
+.upgradeHeader {
+    text-align: center;
+}
+
 .dataStyle {
-    background: gray;
+    background:white;
     display: flex;
     flex-flow: row wrap;
-    padding: 25px 25px 0;
+    padding: 25px 25px 100px;
 }

@@ -53,7 +53,7 @@ const [game, setGame] = useState({
             <Route path="*"> <NoMatch /> </Route>
           </Switch>
           <InfoPanel dogs={game.dogs}/>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
     </Router>
