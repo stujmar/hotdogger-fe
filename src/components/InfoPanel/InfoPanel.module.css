@@ -25,7 +25,7 @@
     width: 80%;
     row-gap: 5px;
     column-gap: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     grid-template-areas: "header header";
 }
 

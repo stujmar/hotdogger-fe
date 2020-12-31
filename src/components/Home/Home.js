@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import { useHistory } from "react-router-dom";
 
-import  { background, getStarted, loginButton, title } from './Home.module.css'
+import  { background, getStarted, loginButton, title, homeBody } from './Home.module.css'
 
 const Home = () => {
     const history = useHistory();
@@ -17,13 +17,13 @@ const Home = () => {
     }
 
     return (
-        <Fragment>
+        <div className={homeBody}>
             <div className={`${background}`}>
                 <div className={title}>Welcome to Hot Dogger</div>
                 <button className={getStarted} onClick={clickHandler}>Get Started!</button>
                 <p>or <button className={loginButton} onClick={loginHandler}>login</button> to track your progress!</p>
             </div>
-        </Fragment>
+        </div>
     )
 }
 export default Home;
