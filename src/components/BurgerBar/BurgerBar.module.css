@@ -15,11 +15,11 @@
     height: 50px;
 }
 
-.on {
+.closeIcon {
     background: url('../../resources/ham-close.png');
 }
 
-.off {
+.openIcon {
     background: url('../../resources/ham-open.png');
 }
 

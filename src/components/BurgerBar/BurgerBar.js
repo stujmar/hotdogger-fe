@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Fragment } from 'react';
-import { grayButton, darker, cart, burgerBar, hamburger, mobileLogo, on, off, grayScreen, menuItems, displayBlock, displayNone } from './BurgerBar.module.css'
+import { grayButton, darker, cart, burgerBar, hamburger, mobileLogo, closeIcon, openIcon, grayScreen, menuItems, displayBlock, displayNone } from './BurgerBar.module.css'
 
 const BurgerBar = ({ toggle, onClick }) => {
           
-    const [menuStyle, setMenuStyle] = useState(`${hamburger} ${off}`);
+    const [menuStyle, setMenuStyle] = useState(`${hamburger} ${openIcon}`);
     const [menuItemsToggle, setItemsMenu] = useState(`${grayScreen} ${displayNone}`);
 
     useEffect(() => {
-        toggle ? setMenuStyle(`${hamburger} ${on}`) : setMenuStyle(`${hamburger} ${off}`);
+        toggle ? setMenuStyle(`${hamburger} ${closeIcon}`) : setMenuStyle(`${hamburger} ${openIcon}`);
         toggle ? setItemsMenu(`${grayScreen} ${displayBlock}`) : setItemsMenu(`${grayScreen} ${displayNone}`);
     },[toggle])
  
