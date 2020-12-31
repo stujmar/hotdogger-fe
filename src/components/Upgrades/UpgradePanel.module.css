@@ -1,6 +1,6 @@
 .dataStyle {
     background: gray;
-    height: 250px;
     display: flex;
-    padding: 50px 25px 0;
+    flex-flow: row wrap;
+    padding: 25px 25px 0;
 }
