@@ -1,11 +1,23 @@
+.upgradeBody {
+    position: relative;
+    z-index: 0;
+}
+
 .upgradeHeader {
     text-align: center;
+    display: block;
+    position:absolute;
+    background: white;
+    padding: 5px;
+    top: 10px;
+    right: calc(50% - 65px);
 }
 
 .dataStyle {
+
     background:white;
     display: flex;
     flex-flow: row wrap;
-    padding: 25px 25px 200px;
+    padding: 75px 25px 200px;
     background: url(../../resources/hero-upgrade.png);
 }
