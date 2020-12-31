@@ -10,3 +10,8 @@ export const ResetGame = (userId) => {
     console.log('Game reset.');
 };
 
+export const userLogin = (onClick) => {
+    console.log("logging in from util file")
+    onClick();
+}
+
