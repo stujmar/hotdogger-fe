@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react'
+import { loginBody, loginButton } from './Login.module.css'
 
 const Login = () => {
     return (
-        <Fragment>
+        <div className={loginBody}>
             <p>This is the Login Page</p><br/>
-            <button>Login Toggle</button>
-        </Fragment>
+            <button className={loginButton}>Login Toggle</button>
+        </div>
     )
 }
 

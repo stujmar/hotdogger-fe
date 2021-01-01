@@ -1,0 +1,10 @@
+.loginBody {
+    text-align: center;
+    padding:10px;
+}
+
+.loginButton {
+    background: #333;
+    padding: 5px;
+    color: white;
+}
