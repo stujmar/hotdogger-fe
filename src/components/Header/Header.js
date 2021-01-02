@@ -1,4 +1,4 @@
-import React, {Fragment, useState } from 'react';
+import React, {Fragment, useEffect, useState } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
 import { activeButton, cart, grayBar, grayButton, menuBar, menuParent, logoStyle, darker, menuButton } from '../Header/Header.module.css';
 // import Button from '../Button';
@@ -7,12 +7,18 @@ import { activeButton, cart, grayBar, grayButton, menuBar, menuParent, logoStyle
 import BurgerBar from '../BurgerBar/BurgerBar';
 import {LoadGame, ResetGame, SaveGame} from '../../utils/GameState'; 
 
-const Header = () => {
+const Header = ({ isLoggedIn }) => {
     const history = useHistory();
     let location = useLocation();
     let upgradeStyle, homeStyle, badgeStyle = {};
-
+    const [loginText, setLoginText] = useState("LOGIN");
     const [mobileMenu, setMobileMenu] = useState(false); 
+
+    useEffect(() => {
+    isLoggedIn ? setLoginText("LOGOUT") : setLoginText("LOGIN");
+    },[isLoggedIn])
+
+
 
     // location.pathname === '/upgrades' ? upgradeStyle = activeTab : upgradeStyle = passiveTab;
     // location.pathname === '/' ? homeStyle = activeTab : homeStyle = passiveTab; 
@@ -47,7 +53,7 @@ const Header = () => {
                         <button onClick={saveHandler} className={`${grayButton}`}>save</button>
                         <button onClick={loadHandler} className={`${grayButton}`}>load</button>
                         <button onClick={resetHandler} className={`${grayButton}`}>reset</button>
-                        <button className={`${grayButton} ${darker}`} onClick={() => history.push("/login")}>login</button>
+                        <button className={`${grayButton} ${darker}`} onClick={() => history.push("/login")}>{loginText}</button>
                         <button className={`${grayButton} ${darker}`}>profile</button>
                         {/* <img className={cart} src={shoppingCart} alt="shopping cart"/> */}
                         <button className={`${cart}`}/>
