@@ -54,7 +54,7 @@ const [game, setGame] = useState({
             <Route exact path="/" render={() => <Home /> }/>
             <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
             <Route path="/badges"  render={() => <BadgePanel /> }/>
-            <Route path="/login"  render={() => <Login /> }/>
+            <Route path="/login"  render={() => <Login onLogin={handleLogin}/> }/>
             <Route path="*"> <NoMatch /> </Route>
           </Switch>
           <InfoPanel dogs={game.dogs}/>
