@@ -18,7 +18,7 @@ import Login from '../Login/Login';
 
 function App() {
 
-  const [loginModal, setLoginModal] = useState(true);
+  // const [loginModal, setLoginModal] = useState(true);
   const [login, setLogin] = useState(false);
   const [user, setUser] = useState({
     name: "",
@@ -34,11 +34,12 @@ const [game, setGame] = useState({
     upgradeTwo: false}]
 })
 
-  const handleLoginModal = () => {
-    setLoginModal(false);
-  }
+  // const handleLoginModal = () => {
+  //   setLoginModal(false);
+  // }
 
   const handleLogin = () => {
+    console.log("hello from app level login toggle");
     setLogin(!login);
   }
 
