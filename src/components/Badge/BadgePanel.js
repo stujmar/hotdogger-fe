@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-import {wrapper} from '../styles/BaseStyles.module.css'
-import { badgeData } from '../data/BadgeData';
+import {wrapper} from './BadgePanel.module.css'
+import { badgeData } from '../../data/BadgeData';
 import Badge from './Badge';
 
 const BadgePanel = (props) => {

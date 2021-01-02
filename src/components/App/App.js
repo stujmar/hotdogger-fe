@@ -10,7 +10,7 @@ import Home from '../Home/Home';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import UpgradePanel from '../Upgrades/UpgradePanel';
-import BadgePanel from '../BadgePanel';
+import BadgePanel from '../Badge/BadgePanel';
 import NoMatch from '../NoMatch/NoMatch';
 import InfoPanel from '../InfoPanel/InfoPanel'
 import LoginModal from '../LoginModal/LoginModal';

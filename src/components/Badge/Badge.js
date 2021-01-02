@@ -1,8 +1,8 @@
 import React from 'react';
-import { badgeWrapper, icon, badgeTitle } from '../styles/Badge.module.css';
+import { badgeWrapper, icon, badgeTitle } from './Badge.module.css';
 
-import img01 from '../resources/badge_01.png';
-import img02 from '../resources/badge_02.png';
+import img01 from '../../resources/badge_01.png';
+import img02 from '../../resources/badge_02.png';
 
 const Badge = ({ onClick, imgId, name, id }) => {
 
