@@ -1,9 +1,9 @@
 import React, {Fragment, useState } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
-import { activeButton, buttonBar, cart, grayBar, grayButton, menuBar, menuParent, logoStyle, darker, background, menuButton } from '../Header/Header.module.css';
-import Button from '../Button';
-import InfoPanel from '../InfoPanel/InfoPanel';
-import shoppingCart from '../../resources/shopping_cart.svg'
+import { activeButton, cart, grayBar, grayButton, menuBar, menuParent, logoStyle, darker, menuButton } from '../Header/Header.module.css';
+// import Button from '../Button';
+// import InfoPanel from '../InfoPanel/InfoPanel';
+// import shoppingCart from '../../resources/shopping_cart.svg'
 import BurgerBar from '../BurgerBar/BurgerBar';
 import {LoadGame, ResetGame, SaveGame} from '../../utils/GameState'; 
 
