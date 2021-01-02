@@ -50,7 +50,7 @@ const [game, setGame] = useState({
       <div className={rootStyle}>
         {/* <LoginModal status={loginModal} onClose={handleLoginModal} /> */}
         <div className={bg}>
-          <Header /> 
+          <Header isLoggedIn={login} /> 
           <Switch>
             <Route exact path="/" render={() => <Home /> }/>
             <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
