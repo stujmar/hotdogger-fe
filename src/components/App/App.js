@@ -38,6 +38,10 @@ const [game, setGame] = useState({
     setLoginModal(false);
   }
 
+  const handleLogin = () => {
+    setLogin(!login);
+  }
+
   return (
     <Router>
       {/* <Playground label="Playground"/> */}
