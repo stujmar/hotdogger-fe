@@ -1,0 +1,12 @@
+.badgeBG {
+    /* Background stuff for all browswers*/
+    background: linear-gradient(90deg, rgba(0,21,40,.95) 0%, rgba(0,212,255,0) 75%), 
+    url(../../resources/hero-upgrade.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* IE */
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale')";
+}
