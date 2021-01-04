@@ -39,7 +39,6 @@ const [game, setGame] = useState({
   // }
 
   const handleLogin = () => {
-    console.log("hello from app level login toggle");
     setLogin(!login);
   }
 
@@ -50,7 +49,7 @@ const [game, setGame] = useState({
       <div className={rootStyle}>
         {/* <LoginModal status={loginModal} onClose={handleLoginModal} /> */}
         <div className={bg}>
-          <Header isLoggedIn={login} /> 
+          <Header isLoggedIn={login} onLogout={handleLogin} /> 
           <Switch>
             <Route exact path="/" render={() => <Home /> }/>
             <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
