@@ -17,13 +17,13 @@ const Home = () => {
     }
 
     return (
-        <div className={homeBody}>
+
             <div className={`${background}`}>
                 <div className={title}>Welcome to Hot Dogger</div>
                 <button className={getStarted} onClick={clickHandler}>Get Started!</button>
                 <p>or <button className={loginButton} onClick={loginHandler}>login</button> to track your progress!</p>
             </div>
-        </div>
+
     )
 }
 export default Home;
