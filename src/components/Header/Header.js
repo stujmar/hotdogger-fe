@@ -7,7 +7,7 @@ import { activeButton, cart, grayBar, grayButton, menuBar, menuParent, logoStyle
 import BurgerBar from '../BurgerBar/BurgerBar';
 import {LoadGame, ResetGame, SaveGame} from '../../utils/GameState'; 
 
-const Header = ({ isLoggedIn }) => {
+const Header = ({ isLoggedIn, onLogout }) => {
     const history = useHistory();
     let location = useLocation();
     let upgradeStyle, homeStyle, badgeStyle = {};
@@ -44,6 +44,10 @@ const Header = ({ isLoggedIn }) => {
         ResetGame();
     };
 
+    const logoutHandler = () => {
+        loginText === "LOGIN" ? history.push("/login") : onLogout();
+    }
+
         return (
             <Fragment>
             <BurgerBar toggle={mobileMenu} onClick={menuToggler}/>
@@ -53,7 +57,7 @@ const Header = ({ isLoggedIn }) => {
                         <button onClick={saveHandler} className={`${grayButton}`}>save</button>
                         <button onClick={loadHandler} className={`${grayButton}`}>load</button>
                         <button onClick={resetHandler} className={`${grayButton}`}>reset</button>
-                        <button className={`${grayButton} ${darker}`} onClick={() => history.push("/login")}>{loginText}</button>
+                        <button className={`${grayButton} ${darker}`} onClick={logoutHandler}>{loginText}</button>
                         <button className={`${grayButton} ${darker}`}>profile</button>
                         {/* <img className={cart} src={shoppingCart} alt="shopping cart"/> */}
                         <button className={`${cart}`}/>
