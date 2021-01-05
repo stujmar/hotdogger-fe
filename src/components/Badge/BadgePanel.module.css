@@ -1,4 +1,5 @@
 .badgeBody {
+    position: relative;
     /* Background stuff for all browswers*/
     background: linear-gradient(90deg, rgba(0,21,40,.95) 0%, rgba(0,212,255,0) 75%), 
     url(../../resources/hero-upgrade.png) no-repeat center center fixed;
