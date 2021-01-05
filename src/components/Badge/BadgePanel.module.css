@@ -1,4 +1,4 @@
-.badgeBG {
+.badgeBody {
     /* Background stuff for all browswers*/
     background: linear-gradient(90deg, rgba(0,21,40,.95) 0%, rgba(0,212,255,0) 75%), 
     url(../../resources/hero-upgrade.png) no-repeat center center fixed;
@@ -9,4 +9,36 @@
     /* IE */
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale')";
+}
+
+.badgeHeader {
+    text-align: center;
+    display: block;
+    position:absolute;
+    background: white;
+    padding: 5px;
+    top: 10px;
+    right: calc(50% - 65px);
+}
+
+.dataStyle {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 75px 15px 200px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+@media only screen and (min-width: 700px) {
+    .dataStyle {
+        width: 700px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .dataStyle {
+        width: 100%;
+        max-width: 1400px;
+    }
 }
