@@ -22,7 +22,7 @@ const BadgePanel = (props) => {
 
         return (
             <div className={badgeBody}>
-                <div className={badgeHeader}>Badge Header</div>
+                <div className={badgeHeader}>Badges</div>
                 <div className={dataStyle}>
                     {badgeArray}
                 </div>
