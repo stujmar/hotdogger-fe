@@ -13,10 +13,10 @@ const Upgrade = ({ name, onClick, id, imgId }) => {
     let imgToDisplay = [null, img01, img02];
 
     return (   
-        <a className={upgradeWrapper} onClick={clickHandler}>
+        <button className={upgradeWrapper} onClick={clickHandler}>
             <img className={icon} src={imgToDisplay[imgId]} alt='upgrade icon'/> 
             <div className={upgradeTitle}>{`${name}`}</div>
-        </a>
+        </button>
     )
 }
 

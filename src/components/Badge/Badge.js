@@ -13,10 +13,10 @@ const Badge = ({ onClick, imgId, name, id }) => {
      let imgToDisplay = [null, img01, img02];
 
     return (
-        <a className={badgeWrapper} onClick={clickHandler}>
+        <button className={badgeWrapper} onClick={clickHandler}>
             <img className={icon} src={imgToDisplay[imgId]} alt='upgrade icon'/> 
             <div className={badgeTitle}>{`${name}`}</div>
-        </a>
+        </button>
     )
 }
 
