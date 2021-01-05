@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import { badgeBG } from './BadgePanel.module.css'
+import { badgeBody, badgeHeader, dataStyle } from './BadgePanel.module.css'
 import { badgeData } from '../../data/BadgeData';
 import Badge from './Badge';
 
@@ -21,9 +21,11 @@ const BadgePanel = (props) => {
         ));
 
         return (
-            <div className={badgeBG}>
-                <div className='sideHeader'>Badge Header</div>
-                {badgeArray}
+            <div className={badgeBody}>
+                <div className={badgeHeader}>Badge Header</div>
+                <div className={dataStyle}>
+                    {badgeArray}
+                </div>
             </div>
         )
 }
