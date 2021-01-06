@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from "react-router-dom";
 
 import { background, title, getStarted, loginButton } from './Welcome.module.css'
 
@@ -22,6 +23,6 @@ const Welcome = () => {
             </div>
     )
 }
-}
+
 
 export default Welcome

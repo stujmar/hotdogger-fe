@@ -15,6 +15,7 @@ import NoMatch from '../NoMatch/NoMatch';
 import InfoPanel from '../InfoPanel/InfoPanel'
 import LoginModal from '../LoginModal/LoginModal';
 import Login from '../Login/Login';
+import Welcome from '../Welcome/Welcome'
 
 function App() {
 
@@ -52,6 +53,7 @@ const [game, setGame] = useState({
           <Header isLoggedIn={login} onLogout={handleLogin} /> 
           <Switch>
             <Route exact path="/" render={() => <Home /> }/>
+            <Route path="/welcome" render={() => <Welcome /> }/>
             <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
             <Route path="/badges"  render={() => <BadgePanel /> }/>
             <Route path="/login"  render={() => <Login onLogin={handleLogin}/> }/>
