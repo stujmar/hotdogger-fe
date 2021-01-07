@@ -43,6 +43,12 @@ const [game, setGame] = useState({
     setLogin(!login);
   }
 
+  const addADog = () => {
+    let prevDogs = game.dogs;
+    setGame({ ...game,
+    dogs: prevDogs++});
+  }
+
   return (
     <Router>
       {/* <Playground label="Playground"/> */}
@@ -52,7 +58,7 @@ const [game, setGame] = useState({
         <div className={bg}>
           <Header isLoggedIn={login} onLogout={handleLogin} /> 
           <Switch>
-            <Route exact path="/" render={() => <Home isLoggedIn={login}/> }/>
+            <Route exact path="/" render={() => <Home isLoggedIn={login} onClick={addADog}/> }/>
             <Route path="/welcome" render={() => <Welcome /> }/>
             <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
             <Route path="/badges"  render={() => <BadgePanel /> }/>
