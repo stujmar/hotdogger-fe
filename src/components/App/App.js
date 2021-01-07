@@ -52,7 +52,7 @@ const [game, setGame] = useState({
         <div className={bg}>
           <Header isLoggedIn={login} onLogout={handleLogin} /> 
           <Switch>
-            <Route exact path="/" render={() => <Home /> }/>
+            <Route exact path="/" render={() => <Home isLoggedIn={login}/> }/>
             <Route path="/welcome" render={() => <Welcome /> }/>
             <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
             <Route path="/badges"  render={() => <BadgePanel /> }/>

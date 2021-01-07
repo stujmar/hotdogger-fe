@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 
 import  { background, getStarted, loginButton, title, homeBody } from './Home.module.css'
 
-const Home = () => {
+const Home = ({isLoggedIn}) => {
     const history = useHistory();
 
     const clickHandler = () => {
