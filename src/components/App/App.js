@@ -20,7 +20,7 @@ import Welcome from '../Welcome/Welcome'
 function App() {
 
   // const [loginModal, setLoginModal] = useState(true);
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
   const [user, setUser] = useState({
     name: "",
     id: 0,

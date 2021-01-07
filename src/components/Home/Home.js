@@ -11,6 +11,7 @@ const Home = ({isLoggedIn, onClick}) => {
     }
 
     const dogHandler = () => {
+        console.log("hello from dog handler");
         onClick();
     }
 
