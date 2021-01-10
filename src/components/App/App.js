@@ -21,6 +21,7 @@ import { getSave } from '../../utils/Crud';
 function App() {
 
   // const [loginModal, setLoginModal] = useState(true);
+
   const [login, setLogin] = useState(true);
   const [user, setUser] = useState({
     name: "",
@@ -39,8 +40,6 @@ const [game, setGame] = useState({
   useEffect(() => {
     console.log(getSave(2));
   }, []);
-
-  
 
   // const handleLoginModal = () => {
   //   setLoginModal(false);
