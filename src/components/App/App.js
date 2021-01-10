@@ -16,6 +16,7 @@ import InfoPanel from '../InfoPanel/InfoPanel'
 import LoginModal from '../LoginModal/LoginModal';
 import Login from '../Login/Login';
 import Welcome from '../Welcome/Welcome'
+import { getSave } from '../../utils/Crud';
 
 function App() {
 
@@ -34,6 +35,10 @@ const [game, setGame] = useState({
     upgradeOne: false, 
     upgradeTwo: false}]
 })
+
+  useEffect(() => {
+    getSave(2);
+  }, []);
 
   // const handleLoginModal = () => {
   //   setLoginModal(false);
