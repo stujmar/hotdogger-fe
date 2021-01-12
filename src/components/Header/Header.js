@@ -7,7 +7,7 @@ import { activeButton, cart, grayBar, grayButton, menuBar, menuParent, logoStyle
 import BurgerBar from '../BurgerBar/BurgerBar';
 import {LoadGame, ResetGame, SaveGame} from '../../utils/GameState'; 
 
-const Header = ({ isLoggedIn, onLog }) => {
+const Header = ({ isLoggedIn, onLog, onLoad, onSave }) => {
     const history = useHistory();
     let location = useLocation();
     let upgradeStyle, homeStyle, badgeStyle = {};
@@ -33,14 +33,17 @@ const Header = ({ isLoggedIn, onLog }) => {
     }
 
     const saveHandler = () => {
+        onSave();
         SaveGame();
     };
 
     const loadHandler = () => {
+        onLoad();
         LoadGame();
     };
 
     const resetHandler = () => {
+        //Probably eliminate this feature.
         ResetGame();
     };
 
