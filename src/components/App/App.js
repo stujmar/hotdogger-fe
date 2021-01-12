@@ -38,8 +38,12 @@ const [game, setGame] = useState({
 })
 
   useEffect(() => {
-    console.log(getSave(2));
+    setData(getSave(2));
   }, []);
+
+  useEffect(() => {
+    console.log(data);
+  },[data])
 
   // const handleLoginModal = () => {
   //   setLoginModal(false);
