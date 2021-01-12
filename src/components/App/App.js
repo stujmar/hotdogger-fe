@@ -17,6 +17,7 @@ import LoginModal from '../LoginModal/LoginModal';
 import Login from '../Login/Login';
 import Welcome from '../Welcome/Welcome'
 import { getSave } from '../../utils/Crud';
+const axios = require('axios')
 
 function App() {
 
@@ -38,7 +39,15 @@ const [game, setGame] = useState({
 })
 
   useEffect(() => {
-    setData(getSave(2));
+    axios.get('http://localhost:8080/saves/1')
+    .then(function (response) {
+        // handle success
+        const myData = response.data;
+
+    }).catch(err => {
+        // Handle Error Here
+        console.error(err);
+    });
   }, []);
 
   useEffect(() => {
