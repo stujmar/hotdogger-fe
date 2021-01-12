@@ -50,10 +50,6 @@ const [game, setGame] = useState({
     });
   }, []);
 
-  useEffect(() => {
-    console.log(data);
-  },[data])
-
   // const handleLoginModal = () => {
   //   setLoginModal(false);
   // }
