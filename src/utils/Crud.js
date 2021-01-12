@@ -13,6 +13,7 @@ export const getSave = async (id) => {
 
     try {
         const resp = await axios.get('http://localhost:8080/saves/1');
+        console.log(resp.data)
         return resp.data;
     } catch (err) {
         // Handle Error Here
