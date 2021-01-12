@@ -58,6 +58,14 @@ const [game, setGame] = useState({
     setLogin(!login);
   }
 
+  const handleLoad = () => {
+    console.log("loading from App.js");
+  };
+
+  const handleSave = () => {
+    console.log("saving from App.js");
+  };
+
   const addADog = () => {
     console.log('hello from add a dog');
     let prevDogs = game.dogs;
@@ -76,8 +84,8 @@ const [game, setGame] = useState({
           <Header 
             isLoggedIn={login} 
             onLog={handleLogin} 
-            onLoad={loadHandler}
-            onSave={saveHandler} /> 
+            onLoad={handleLoad}
+            onSave={handleSave} /> 
           <Switch>
             <Route exact path="/" render={() => <Home isLoggedIn={login} onClick={addADog}/> }/>
             <Route path="/welcome" render={() => <Welcome /> }/>
