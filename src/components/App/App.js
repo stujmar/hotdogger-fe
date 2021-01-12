@@ -42,7 +42,7 @@ const [game, setGame] = useState({
     axios.get('http://localhost:8080/saves/1')
     .then(function (response) {
         // handle success
-        const myData = response.data;
+        setData(response.data);
 
     }).catch(err => {
         // Handle Error Here
