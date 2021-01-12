@@ -21,7 +21,7 @@ import { getSave } from '../../utils/Crud';
 function App() {
 
   // const [loginModal, setLoginModal] = useState(true);
-
+  const [data, setData] = useState({data: "not loaded"});
   const [login, setLogin] = useState(true);
   const [user, setUser] = useState({
     name: "",
