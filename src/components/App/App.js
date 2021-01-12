@@ -73,7 +73,11 @@ const [game, setGame] = useState({
       <div className={rootStyle}>
         {/* <LoginModal status={loginModal} onClose={handleLoginModal} /> */}
         <div className={bg}>
-          <Header isLoggedIn={login} onLogout={handleLogin} onLoad={loadHandler} /> 
+          <Header 
+            isLoggedIn={login} 
+            onLog={handleLogin} 
+            onLoad={loadHandler}
+            onSave={saveHandler} /> 
           <Switch>
             <Route exact path="/" render={() => <Home isLoggedIn={login} onClick={addADog}/> }/>
             <Route path="/welcome" render={() => <Welcome /> }/>

@@ -7,7 +7,7 @@ import { activeButton, cart, grayBar, grayButton, menuBar, menuParent, logoStyle
 import BurgerBar from '../BurgerBar/BurgerBar';
 import {LoadGame, ResetGame, SaveGame} from '../../utils/GameState'; 
 
-const Header = ({ isLoggedIn, onLogout }) => {
+const Header = ({ isLoggedIn, onLog }) => {
     const history = useHistory();
     let location = useLocation();
     let upgradeStyle, homeStyle, badgeStyle = {};
@@ -45,7 +45,7 @@ const Header = ({ isLoggedIn, onLogout }) => {
     };
 
     const logoutHandler = () => {
-        loginText === "LOGIN" ? history.push("/login") : onLogout();
+        loginText === "LOGIN" ? history.push("/login") : onLog();
     }
 
         return (
