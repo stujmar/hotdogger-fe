@@ -31,7 +31,11 @@ const BurgerBar = ({ toggle, onClick, isLoggedIn }) => {
     }
     
     const handleLogin = () => {
-        onClick();
+        if (isLoggedIn) {
+            onClick();
+        } else {
+            onClick();
+        }
     }
 
     return (
