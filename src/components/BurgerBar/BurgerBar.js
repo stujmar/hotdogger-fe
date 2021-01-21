@@ -41,10 +41,9 @@ const BurgerBar = ({ toggle, onClick, isLoggedIn }) => {
                {isLoggedIn ? <button className={`${grayButton}`} onClick={handleSave}>save</button> : null} 
                {isLoggedIn ? <button className={`${grayButton}`} onClick={handleLoad}>load</button> : null} 
                 <button className={`${grayButton}`} onClick={handleReset}>reset</button>
-                <button className={`${grayButton} ${darker}`} onClick={handleLogin}>login</button>
+                <button className={`${grayButton} ${darker}`} onClick={handleLogin}>{isLoggedIn ? "logout" : "login"}</button>
                 <button className={`${grayButton} ${darker}`}>profile</button>
                 <button className={`${cart}`}/>
-
             </div>
         </div>
         <button onClick={toggleHandler} className={burgerBar}>
