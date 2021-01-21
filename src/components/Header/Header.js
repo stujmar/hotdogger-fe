@@ -57,7 +57,7 @@ const Header = ({ isLoggedIn, onLog, onLoad, onSave }) => {
                 <div className={menuParent}>
                     <button className={logoStyle}></button>
                     <div className={grayBar}>
-                        <button onClick={saveHandler} className={`${grayButton}`}>save</button>
+                       {isLoggedIn ? <button onClick={saveHandler} className={`${grayButton}`}>save</button> : ""} 
                         <button onClick={loadHandler} className={`${grayButton}`}>load</button>
                         <button onClick={resetHandler} className={`${grayButton}`}>reset</button>
                         <button className={`${grayButton} ${darker}`} onClick={logoutHandler}>{loginText}</button>
