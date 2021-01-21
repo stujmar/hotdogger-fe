@@ -18,12 +18,6 @@ const Header = ({ isLoggedIn, onLog, onLoad, onSave }) => {
     isLoggedIn ? setLoginText("LOGOUT") : setLoginText("LOGIN");
     },[isLoggedIn])
 
-
-
-    // location.pathname === '/upgrades' ? upgradeStyle = activeTab : upgradeStyle = passiveTab;
-    // location.pathname === '/' ? homeStyle = activeTab : homeStyle = passiveTab; 
-    // location.pathname === '/badges' ? badgeStyle = activeTab : badgeStyle = passiveTab;
-
     homeStyle = location.pathname === '/' ? `${menuButton} ${activeButton}` : `${menuButton}`;
     badgeStyle = location.pathname === '/badges' ? `${menuButton} ${activeButton}` : `${menuButton}`;
     upgradeStyle = location.pathname === '/upgrades' ? `${menuButton} ${activeButton}` : `${menuButton}`;
@@ -53,7 +47,7 @@ const Header = ({ isLoggedIn, onLog, onLoad, onSave }) => {
 
         return (
             <Fragment>
-            <BurgerBar toggle={mobileMenu} onClick={menuToggler}/>
+            <BurgerBar toggle={mobileMenu} onClick={menuToggler} isLoggedIn={isLoggedIn} />
                 <div className={menuParent}>
                     <button className={logoStyle}></button>
                     <div className={grayBar}>

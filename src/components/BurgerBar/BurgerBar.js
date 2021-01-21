@@ -4,7 +4,7 @@ import { Fragment } from 'react';
 import { grayButton, darker, cart, burgerBar, hamburger, mobileLogo, closeIcon, openIcon, grayScreen, menuItems, displayBlock, displayNone } from './BurgerBar.module.css'
 import {LoadGame, ResetGame, SaveGame} from '../../utils/GameState';
 
-const BurgerBar = ({ toggle, onClick }) => {
+const BurgerBar = ({ toggle, onClick, isLoggedIn }) => {
           
     const [menuStyle, setMenuStyle] = useState(`${hamburger} ${openIcon}`);
     const [menuItemsToggle, setItemsMenu] = useState(`${grayScreen} ${displayNone}`);
@@ -30,13 +30,14 @@ const BurgerBar = ({ toggle, onClick }) => {
         SaveGame();
     }
     
+    console.log(isLoggedIn, "from the burgerbar");
 
     return (
         <Fragment>
         <div  className={menuItemsToggle}>
             <div className={menuItems}>
-                <button className={`${grayButton}`} onClick={handleSave}>save</button>
-                <button className={`${grayButton}`} onClick={handleLoad}>load</button>
+               {isLoggedIn ? <button className={`${grayButton}`} onClick={handleSave}>save</button> : null} 
+               {isLoggedIn ? <button className={`${grayButton}`} onClick={handleLoad}>load</button> : null} 
                 <button className={`${grayButton}`} onClick={handleReset}>reset</button>
                 <button className={`${grayButton} ${darker}`}>login</button>
                 <button className={`${grayButton} ${darker}`}>profile</button>
