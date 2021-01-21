@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Fragment } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import { grayButton, darker, cart, burgerBar, hamburger, mobileLogo, closeIcon, openIcon, grayScreen, menuItems, displayBlock, displayNone } from './BurgerBar.module.css'
 import {LoadGame, ResetGame, SaveGame} from '../../utils/GameState';
 
 const BurgerBar = ({ toggle, onClick, isLoggedIn }) => {
-          
+    const history = useHistory();      
     const [menuStyle, setMenuStyle] = useState(`${hamburger} ${openIcon}`);
     const [menuItemsToggle, setItemsMenu] = useState(`${grayScreen} ${displayNone}`);
 
@@ -35,6 +36,7 @@ const BurgerBar = ({ toggle, onClick, isLoggedIn }) => {
             onClick();
         } else {
             onClick();
+            history.push('/login');
         }
     }
 
