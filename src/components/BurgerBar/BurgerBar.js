@@ -30,7 +30,9 @@ const BurgerBar = ({ toggle, onClick, isLoggedIn }) => {
         SaveGame();
     }
     
-    console.log(isLoggedIn, "from the burgerbar");
+    const handleLogin = () => {
+        onClick();
+    }
 
     return (
         <Fragment>
@@ -39,7 +41,7 @@ const BurgerBar = ({ toggle, onClick, isLoggedIn }) => {
                {isLoggedIn ? <button className={`${grayButton}`} onClick={handleSave}>save</button> : null} 
                {isLoggedIn ? <button className={`${grayButton}`} onClick={handleLoad}>load</button> : null} 
                 <button className={`${grayButton}`} onClick={handleReset}>reset</button>
-                <button className={`${grayButton} ${darker}`}>login</button>
+                <button className={`${grayButton} ${darker}`} onClick={handleLogin}>login</button>
                 <button className={`${grayButton} ${darker}`}>profile</button>
                 <button className={`${cart}`}/>
 
