@@ -1,9 +1,13 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import { loginBody, loginButton, formInput } from './Login.module.css'
 
 
 const Login = ({ onLogin }) => {
     
+    const [userLogin, setUserLogin] = useState({
+        username: "",
+        password: ""
+    })
     const handleLoginToggle = () => {
         console.log("toggle login");
         onLogin();
