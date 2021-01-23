@@ -43,13 +43,17 @@ const Header = ({ isLoggedIn, onLog, onLoad, onSave }) => {
 
     const logoutHandler = () => {
         loginText === "LOGIN" ? history.push("/login") : onLog();
-    }
+    };
+
+    const homeHandler = () => {
+        history.push("/");
+    };
 
         return (
             <Fragment>
             <BurgerBar toggle={mobileMenu} onClick={menuToggler} isLoggedIn={isLoggedIn} />
                 <div className={menuParent}>
-                    <button className={logoStyle}></button>
+                    <button onClick={homeHandler} className={logoStyle}></button>
                     <div className={grayBar}>
                        {isLoggedIn ? <button onClick={saveHandler} className={`${grayButton}`}>save</button> : ""} 
                        {isLoggedIn ? <button onClick={loadHandler} className={`${grayButton}`}>load</button> : ""}
