@@ -67,7 +67,7 @@ const [game, setGame] = useState({
   };
 
   const addADog = () => {
-    console.log('hello from add a dog');
+    console.log("Adding a dog");
     let prevDogs = game.dogs;
     prevDogs++;
     setGame({ ...game,
