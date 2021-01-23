@@ -4,13 +4,17 @@ import { loginBody, loginButton, formInput } from './Login.module.css'
 
 const Login = ({ onLogin }) => {
     
-    const [userLogin, setUserLogin] = useState({
+    const [formData, setFormData] = useState({
         username: "",
         password: ""
     })
     const handleLoginToggle = () => {
         console.log("toggle login");
         onLogin();
+    }
+
+    const handleChange = () => {
+
     }
     
     const handleSubmit = (e) => {
@@ -21,8 +25,9 @@ const Login = ({ onLogin }) => {
         <div className={loginBody}>
             <p>This is the Login Page</p><br/>
             <form onSubmit={handleSubmit}>
-                <input className={formInput} type="text" placeholder="email" />
-                <input className={formInput} type="text" placeholder="password"/>
+                <input className={formInput} type="text" name="username" placeholder="username" />
+                <input className={formInput} type="text" name="password" placeholder="password"/>
+                <button type="submit">Submit</button>
             </form>
             <button className={loginButton} onClick={handleLoginToggle}>Login Toggle</button>
         </div>
