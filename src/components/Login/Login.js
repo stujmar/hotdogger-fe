@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { loginBody, loginButton } from './Login.module.css'
+import { loginBody, loginButton, formInput } from './Login.module.css'
 
 
 const Login = ({ onLogin }) => {
@@ -12,6 +12,8 @@ const Login = ({ onLogin }) => {
     return (
         <div className={loginBody}>
             <p>This is the Login Page</p><br/>
+            <input className={formInput} type="text" placeholder="email" />
+            <input className={formInput} type="text" placeholder="password"/>
             <button className={loginButton} onClick={handleLoginToggle}>Login Toggle</button>
         </div>
     )
