@@ -8,12 +8,18 @@ const Login = ({ onLogin }) => {
         console.log("toggle login");
         onLogin();
     }
+    
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
 
     return (
         <div className={loginBody}>
             <p>This is the Login Page</p><br/>
-            <input className={formInput} type="text" placeholder="email" />
-            <input className={formInput} type="text" placeholder="password"/>
+            <form onSubmit={handleSubmit}>
+                <input className={formInput} type="text" placeholder="email" />
+                <input className={formInput} type="text" placeholder="password"/>
+            </form>
             <button className={loginButton} onClick={handleLoginToggle}>Login Toggle</button>
         </div>
     )
