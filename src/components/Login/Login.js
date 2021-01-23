@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react'
-import { loginBody, loginButton, formInput } from './Login.module.css'
+import { loginBody, loginButton, formInput, loginForm } from './Login.module.css'
 
 
 const Login = ({ onLogin }) => {
@@ -24,7 +24,7 @@ const Login = ({ onLogin }) => {
     return (
         <div className={loginBody}>
             <p>This is the Login Page</p><br/>
-            <form onSubmit={handleSubmit}>
+            <form class={loginForm} onSubmit={handleSubmit}>
                 <input className={formInput} type="text" name="username" placeholder="username" />
                 <input className={formInput} type="text" name="password" placeholder="password"/>
                 <button type="submit">Submit</button>
