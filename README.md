@@ -1,6 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![hotdogger](./readme.png)
+# Hotdogger React Front End
 
-## Available Scripts
+### Block frames progress
+```
+https://www.figma.com/file/FkY24W8l3VUcDEUGGKvdV9/Hotdogger-WireFrame.?node-id=1%3A2
+```
+
+## Create-React-App Boiler Plate
 
 In the project directory, you can run:
 
