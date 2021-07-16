@@ -8,15 +8,14 @@ import { bg, rootStyle} from './App.module.css';
 import './App.css';
 import Home from '../Home/Home';
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import UpgradePanel from '../Upgrades/UpgradePanel';
 import BadgePanel from '../Badge/BadgePanel';
 import NoMatch from '../NoMatch/NoMatch';
 import InfoPanel from '../InfoPanel/InfoPanel'
-import LoginModal from '../LoginModal/LoginModal';
 import Login from '../Login/Login';
 import Welcome from '../Welcome/Welcome'
-import { getSave } from '../../utils/Crud';
+import ClockService from '../ClockService';
+
 const axios = require('axios')
 
 function App() {
@@ -76,6 +75,7 @@ const [game, setGame] = useState({
 
   return (
     <Router>
+      <ClockService />
       {/* <Playground label="Playground"/> */}
       {/* <TickTimer /> */}
       <div className={rootStyle}>

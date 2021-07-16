@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectSpeed } from '../../redux/clockSlice';
 import { selectDay, resetDay, incrementDay } from '../../redux/daySlice';
