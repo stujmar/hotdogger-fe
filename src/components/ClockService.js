@@ -1,15 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectSpeed } from '../../redux/gameSlice';
-import { selectDay, resetDay, incrementDay } from '../../redux/daySlice';
-import { selectHour, resetHour, incrementHour } from '../../redux/hourSlice';
+// import { selectDay, resetDay, incrementDay } from '../../redux/daySlice';
+// import { selectHour, resetHour, incrementHour } from '../../redux/hourSlice';
 
 const ClockService = () => {
         // let [count, setCount] = useState(Math.floor(Math.random() * (366 - 1) + 1));
         const dispatch = useDispatch();
-        let speed = useSelector(selectSpeed);
-        let hour = useSelector(selectHour);
-        let day = useSelector(selectDay);
 
         // let [day, setDay] = useState(Math.floor(Math.random() * (366 - 1) + 1));
 
@@ -34,7 +31,7 @@ const ClockService = () => {
         }
         useInterval(() => {
           console.log("Click");
-        }, speed); // How many milliseconds it takes for an hour to pass in game.
+        }, 500); // How many milliseconds it takes for an hour to pass in game.
     return (<></>)
 }
 
