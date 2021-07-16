@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectSpeed } from '../../redux/clockSlice';
+import { selectSpeed } from '../../redux/gameSlice';
 import { selectDay, resetDay, incrementDay } from '../../redux/daySlice';
 import { selectHour, resetHour, incrementHour } from '../../redux/hourSlice';
 
