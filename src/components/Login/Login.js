@@ -4,18 +4,19 @@ import { loginBody, loginButton, formInput, loginForm } from './Login.module.css
 
 const Login = ({ onLogin }) => {
     
-    const [formData, setFormData] = useState({
-        username: "",
-        password: ""
-    })
+    // const [formData, setFormData] = useState({
+    //     username: "",
+    //     password: ""
+    // })
+
     const handleLoginToggle = () => {
         console.log("toggle login");
         onLogin();
     }
 
-    const handleChange = () => {
+    // const handleChange = () => {
 
-    }
+    // }
     
     const handleSubmit = (e) => {
         e.preventDefault()
