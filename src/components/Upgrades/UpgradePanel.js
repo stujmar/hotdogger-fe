@@ -1,9 +1,7 @@
 import React from 'react';
-
 import {dataStyle, upgradeHeader, upgradeBody} from './UpgradePanel.module.css'
 import { upgradeData } from '../../data/UpgradeData';
 import Upgrade from './Upgrade';
-import { Fragment } from 'react';
 
 const UpgradePanel = (props) => {
 
