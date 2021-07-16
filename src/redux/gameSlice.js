@@ -3,6 +3,7 @@ import { gameStats } from './gameStats';
 
 const initialState = {
     mode: "PLANTING",
+    gameStats: gameStats,
     trees: [],
     resources: {
         seeds: 10,
