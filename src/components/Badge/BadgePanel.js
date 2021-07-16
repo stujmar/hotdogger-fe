@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import { badgeBody, badgeHeader, dataStyle } from './BadgePanel.module.css'
 import { badgeData } from '../../data/BadgeData';
