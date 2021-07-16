@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { useHistory, Redirect } from "react-router-dom";
 
-import  { background, getStarted, loginButton, title, homeBody } from './Home.module.css'
+import  { background, getStarted, loginButton, title } from './Home.module.css'
 
 const Home = ({isLoggedIn, onClick}) => {
     const history = useHistory();
