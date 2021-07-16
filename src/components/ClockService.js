@@ -33,19 +33,7 @@ const ClockService = () => {
             }, [delay]);
         }
         useInterval(() => {
-            if (hour < 24) {  // If the time is less than 24 tick forward an hour.
-                dispatch(incrementHour());
-            } else { // Else we need to reset to 1:00am.
-                dispatch(resetHour());
-            }
-            if (hour === 23) { // If we are about to tick over to 12:00am progress the day.
-                if (day < 365) { // Most days of the year we just tick forward one day.
-                    dispatch(incrementDay());
-                } else { // Except on New Year's Eve resest to the first day of the year.
-                    dispatch(resetDay()); 
-                }
-            }
-    
+          console.log("Click");
         }, speed); // How many milliseconds it takes for an hour to pass in game.
     return (<></>)
 }
