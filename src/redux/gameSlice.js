@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { gameStats } from './gameStats';
+import gameDefaults from './gameDefaults';
 
 const initialState = {
     mode: "CLICKING",
-    gameStats: gameStats,
+    gameStats: gameDefaults,
     resources: {
         seeds: 10,
         stars: 10,
@@ -69,6 +69,6 @@ export const {
     resetResource
     } = gameSlice.actions;
 
-export const selectGameStats = (state) => state.game;
+export const selectGameStats = (state) => state.game.gameStats;
 
 export default gameSlice.reducer;
