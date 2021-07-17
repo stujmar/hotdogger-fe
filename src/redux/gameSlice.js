@@ -69,6 +69,6 @@ export const {
     resetResource
     } = gameSlice.actions;
 
-export const selectGameStats = (state) => state.game.gameStats;
+export const selectGameStats = (state) => state.game;
 
 export default gameSlice.reducer;
