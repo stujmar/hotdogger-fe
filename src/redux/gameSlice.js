@@ -4,7 +4,6 @@ import { gameStats } from './gameStats';
 const initialState = {
     mode: "CLICKING",
     gameStats: gameStats,
-    trees: [],
     resources: {
         seeds: 10,
         stars: 10,
