@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { gameStats } from './gameStats';
 
 const initialState = {
-    mode: "PLANTING",
+    mode: "CLICKING",
     gameStats: gameStats,
     trees: [],
     resources: {
