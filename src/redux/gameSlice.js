@@ -99,6 +99,6 @@ export const {
 export const selectGame = (state) => state.game;
 export const selectMode = (state) => state.game.mode;
 export const selectTrees = (state) => state.game.trees;
-export const selectResources = (state) => state.game.resources;
+export const selectGameStats = (state) => state.game.gameStats;
 
 export default gameSlice.reducer;
