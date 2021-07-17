@@ -4,6 +4,8 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import { useSelector } from 'react-redux'
+import { selectGameStats } from '../../redux/gameSlice'
 import { bg, rootStyle} from './App.module.css';
 import './App.css';
 import Home from '../Home/Home';
@@ -19,7 +21,8 @@ import ClockService from '../ClockService';
 const axios = require('axios')
 
 function App() {
-
+  let currentGameStats = useSelector(selectGameStats);
+  console.log(currentGameStats);
   // const [loginModal, setLoginModal] = useState(true);
   const [data, setData] = useState({data: "not loaded"});
   const [login, setLogin] = useState(true);
