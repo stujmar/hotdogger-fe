@@ -67,13 +67,7 @@ export const gameSlice = createSlice({
 });
 
 export const { 
-    addTree, 
     setMode, 
-    removeTree, 
-    resetTrees, 
-    ageTrees, 
-    growTrees,
-    removeTreeById,
     updateSeeds,
     updateResource,
     resetResource
