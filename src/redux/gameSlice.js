@@ -16,6 +16,15 @@ export const gameSlice = createSlice({
     name: 'game',
     initialState,
     reducers: {
+        incrementTime: (state) => {
+            state.time += 1;
+        },
+        resetTime: (state) => {
+            state.time = 1;
+        },
+        setTime: (state, action) => {
+            state.time = action.payload;
+        },
         setMode: (state, action) => {
             state.mode = action.payload;
         },
