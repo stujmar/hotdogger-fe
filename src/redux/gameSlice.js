@@ -4,6 +4,7 @@ import gameDefaults from './gameDefaults';
 const initialState = {
     mode: "CLICKING",
     gameStats: gameDefaults,
+    time: 0,
     resources: {
         seeds: 10,
         stars: 10,
@@ -70,5 +71,6 @@ export const {
     } = gameSlice.actions;
 
 export const selectGameStats = (state) => state.game.gameStats;
+export const selectGameTime = (state) => state.game.time;
 
 export default gameSlice.reducer;
