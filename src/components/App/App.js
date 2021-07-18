@@ -22,14 +22,15 @@ const axios = require('axios')
 
 function App() {
   let currentGameStats = useSelector(selectGameStats);
-  console.log(currentGameStats);
   // const [loginModal, setLoginModal] = useState(true);
   const [data, setData] = useState({data: "not loaded"});
   const [login, setLogin] = useState(true);
-  const [user, setUser] = useState({
-    name: "",
-    id: 0,
-  })
+  console.log(currentGameStats);
+  console.log("data", data);
+  // const [user, setUser] = useState({
+  //   name: "",
+  //   id: 0,
+  // })
 const [game, setGame] = useState({
   dogs: 0,
   badges: [{
@@ -98,6 +99,7 @@ const [game, setGame] = useState({
             <Route path="*"> <NoMatch /> </Route>
           </Switch>
           <InfoPanel dogs={game.dogs}/>
+
           {/* <Footer /> */}
         </div>
       </div>
