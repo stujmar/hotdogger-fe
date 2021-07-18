@@ -17,6 +17,7 @@ import InfoPanel from '../InfoPanel/InfoPanel'
 import Login from '../Login/Login';
 import Welcome from '../Welcome/Welcome'
 import ClockService from '../ClockService';
+import DogGame from '../DogGame/DogGame';
 
 const axios = require('axios')
 
@@ -94,6 +95,7 @@ const [game, setGame] = useState({
             <Route exact path="/" render={() => <Home isLoggedIn={login} onClick={addADog}/> }/>
             <Route path="/welcome" render={() => <Welcome /> }/>
             <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
+            <Route path="/gme"  render={() => <DogGame /> }/>
             <Route path="/badges"  render={() => <BadgePanel /> }/>
             <Route path="/login"  render={() => <Login onLogin={handleLogin}/> }/>
             <Route path="*"> <NoMatch /> </Route>
