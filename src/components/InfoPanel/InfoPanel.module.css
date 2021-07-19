@@ -1,5 +1,6 @@
 .infoBody {
     display: flex;
+    justify-content: space-between;
     height: 125px;
     width: 100%;
     background: #333;
@@ -12,16 +13,14 @@
 
 .dogCount {
     grid-area: header;
-    padding: 0 10px;
     width: max-content;
-    margin: 0 25px 0 25px;
     font-size: 2rem;
 }
 
 .infoWrap {
     padding-left: 100px;
     padding-bottom: 25px;
-    text-align: left;
+    text-align: right;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
