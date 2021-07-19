@@ -5,8 +5,8 @@ const InfoPanel = ({dogs}) => {
 
     return (
         <div className={infoBody}>
+            <div className={dogCount}>Hotdogs: {dogs}</div>
             <div className={infoWrap}>
-                <div className={dogCount}>Hotdogs: {dogs}</div>
                 <div className={infoItem}>Customers: 100</div>
                 <div className={infoItem}>Total Clicks: 100</div>
                 <div className={infoItem}>Click Power: 100</div>

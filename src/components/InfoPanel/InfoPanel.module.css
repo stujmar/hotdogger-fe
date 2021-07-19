@@ -1,31 +1,35 @@
 .infoBody {
-    display: block;
+    display: flex;
     height: 125px;
     width: 100%;
     background: #333;
-    position: sticky;
+    position: absolute;
     color: white;
     bottom: 0px;
+    padding: 20px;
 }
 
 
 .dogCount {
     grid-area: header;
-    padding: 10px;
+    padding: 0 10px;
+    width: max-content;
+    margin: 0 25px 0 25px;
     font-size: 2rem;
 }
 
 .infoWrap {
-    text-align: center;
+    padding-left: 100px;
+    padding-bottom: 25px;
+    text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    height:125px;
-    margin: 0 auto;
+    grid-template-rows: 1fr 1fr;
     width: 80%;
-    row-gap: 5px;
-    column-gap: 5px;
-    padding-bottom: 25px;
     grid-template-areas: "header header";
+}
+
+.infoItem {
+    height: min-content;
 }
 
