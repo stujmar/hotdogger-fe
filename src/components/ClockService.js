@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
+import { addTime } from '../redux/gameSlice';
 // import { selectSpeed } from '../redux/gameSlice';
 // import { selectDay, resetDay, incrementDay } from '../../redux/daySlice';
 // import { selectHour, resetHour, incrementHour } from '../../redux/hourSlice';
@@ -31,6 +32,7 @@ const ClockService = () => {
         }
         useInterval(() => {
           console.log("Click");
+          dispatch(addTime());
         }, 500); // How many milliseconds it takes for an hour to pass in game.
     return (<></>)
 }
