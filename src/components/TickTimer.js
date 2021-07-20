@@ -3,8 +3,6 @@ import UseInterval from "../utils/UseInterval"
 
 const TickTimer = () => {
 
-    let countDisplay;
-
     const [count, setCount] = useState(0);
     const [modifier, setModifier] = useState(0);
 
