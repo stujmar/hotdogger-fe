@@ -50,6 +50,7 @@ const [game, setGame] = useState({
 
     }).catch(err => {
         // Handle Error Here
+        console.log("looks like we aren't connected");
         console.error(err);
     });
   }, []);
