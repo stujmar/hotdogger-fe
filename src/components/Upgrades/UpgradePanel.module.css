@@ -25,23 +25,21 @@
 
 .dataStyle {
     display: grid;
+    gap: 5px;
     padding: 75px 15px 200px;
     margin: 0 auto;
-    width: 300px;
+    width: min-content;
 }
 
 @media only screen and (min-width: 700px) {
     .dataStyle {
         grid-template-columns: 1fr 1fr;
-        width: 700px;
     }
 }
 
 @media only screen and (min-width: 1000px) {
     .dataStyle {
         grid-template-columns: 1fr 1fr 1fr;
-        width: 100%;
-        max-width: 1400px;
     }
 }
 
