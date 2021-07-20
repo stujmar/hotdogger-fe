@@ -28,9 +28,6 @@ export const gameSlice = createSlice({
         setMode: (state, action) => {
             state.mode = action.payload;
         },
-        updateSeeds: (state, action) => {
-            state.resources.seeds = state.resources.seeds + action.payload;
-        },
         updateResource: (state, action) => {
             let amount = action.payload.amount;
             switch(action.payload.type) {
@@ -70,7 +67,8 @@ export const {
     setMode, 
     updateSeeds,
     updateResource,
-    resetResource
+    resetResource,
+    incrementTime
     } = gameSlice.actions;
 
 export const selectGameStats = (state) => state.game.gameStats;
