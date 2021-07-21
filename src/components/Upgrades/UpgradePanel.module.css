@@ -25,7 +25,7 @@
 
 .dataStyle {
     display: grid;
-    gap: 5px;
+    gap: 8px;
     padding: 75px 15px 200px;
     margin: 0 auto;
     width: min-content;
