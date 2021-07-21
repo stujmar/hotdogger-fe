@@ -7,9 +7,11 @@
 
 .upgradeHeader {
     text-align: center;
-    display: block;
+    display: none;
     position:absolute;
-    background: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    background: #FFDD00;
     padding: 5px;
     top: 10px;
     right: calc(50% - 65px);
@@ -18,7 +20,7 @@
 .dataStyle {
     display: grid;
     gap: 8px;
-    padding: 75px 15px 200px;
+    padding: 25px 15px 200px;
     margin: 0 auto;
     width: min-content;
 }
@@ -26,6 +28,7 @@
 @media only screen and (min-width: 700px) {
     .dataStyle {
         grid-template-columns: 1fr 1fr;
+        padding: 45px 15px 200px;
     }
 }
 
