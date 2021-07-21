@@ -6,16 +6,7 @@
     z-index: 0;
     color: white;
     /* Background stuff for all browswers*/
-    background: url(../../resources/background.jpg) no-repeat center center fixed;
-    /* background: linear-gradient(180deg, rgba(0,21,40, 0) 50%, rgb(99, 84, 84) 100%), 
-    url(../../resources/background.jpg) no-repeat center center fixed; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /* IE */
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale')";
+    background: #FFDD00;
   }
 
 
@@ -56,7 +47,7 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.205);
   position: relative;
   display: flex;
-  height: 500px;
+  height: 250px;
   justify-content: space-between;
   flex-direction: row-reverse;
 }
