@@ -95,7 +95,7 @@ const [game, setGame] = useState({
             <Route exact path="/" render={() => <Home isLoggedIn={login} onClick={addADog}/> }/>
             <Route path="/welcome" render={() => <Welcome /> }/>
             <Route path="/upgrades"  render={() => <UpgradePanel /> }/>
-            <Route path="/gme"  render={() => <DogGame /> }/>
+            <Route path="/game"  render={() => <DogGame /> }/>
             <Route path="/badges"  render={() => <BadgePanel /> }/>
             <Route path="/login"  render={() => <Login onLogin={handleLogin}/> }/>
             <Route path="*"> <NoMatch /> </Route>

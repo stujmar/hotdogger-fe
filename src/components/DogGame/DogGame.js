@@ -3,7 +3,7 @@ import { dogBackground } from './DogGame.module.css';
 
 const DogGame = () => {
     return (<React.Fragment>
-        <div className={dogBackground}></div>
+        <div className={dogBackground}>Put game here.</div>
     </React.Fragment>)
 }
 

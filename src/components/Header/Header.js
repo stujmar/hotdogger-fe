@@ -46,7 +46,7 @@ const Header = ({ isLoggedIn, onLog, onLoad, onSave }) => {
     };
 
     const homeHandler = () => {
-        history.push("/");
+        history.push("/game");
     };
 
         return (
