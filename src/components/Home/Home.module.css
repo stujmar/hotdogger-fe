@@ -6,7 +6,7 @@
     padding: 100px 80px;
     color: white;
     /* Background stuff for all browswers*/
-    background: linear-gradient(180deg, rgba(0,21,40, 0) 0%, rgb(99, 84, 84) 99%), 
+    background: linear-gradient(180deg, rgba(0,21,40, 0) 50%, rgb(99, 84, 84) 100%), 
     url(../../resources/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
