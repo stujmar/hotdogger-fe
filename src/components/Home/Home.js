@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory, Redirect } from "react-router-dom";
 
-import  { background, getStarted, loginButton, title } from './Home.module.css'
+import  { background, getStarted, loginButton, title, flexHolder, cta } from './Home.module.css'
 
 const Home = ({isLoggedIn, onClick}) => {
     const history = useHistory();
@@ -15,11 +15,14 @@ const Home = ({isLoggedIn, onClick}) => {
     }
 
     return (
-            <div className={`${background}`}>
-                { isLoggedIn ? null : <Redirect to="/welcome"/>}
+            <div className={flexHolder}>
                 <div className={title}>Welcome to Hot Dogger</div>
-                <button className={getStarted} onClick={clickHandler}>Get Started!</button>
-                <p>or <button className={loginButton} onClick={dogHandler}>DOG</button> click that dog!</p>
+                <div className={`${background}`}></div>
+                <div className={cta}>
+                    { isLoggedIn ? null : <Redirect to="/welcome"/>}
+                    <button className={getStarted} onClick={clickHandler}>Get Started!</button>
+                    <p>or <button className={loginButton} onClick={dogHandler}>DOG</button> click that dog!</p>
+                </div>
             </div>
     )
 }
