@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import { useSelector } from 'react-redux'
 import { selectGameStats } from '../../redux/gameSlice'
-import { bg, rootStyle} from './App.module.css';
+import { rootStyle} from './App.module.css';
 import './App.css';
 import Home from '../Home/Home';
 import Header from '../Header/Header';
