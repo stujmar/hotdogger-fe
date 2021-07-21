@@ -1,8 +1,8 @@
 import React from 'react';
 import { upgradeTitle, upgradeWrapper, icon } from './Upgrade.module.css';
 //import possible images
-import img01 from '../../resources/upgrade_01.png';
-import img02 from '../../resources/upgrade_02.png';
+// import img01 from '../../resources/upgrade_01.png';
+// import img02 from '../../resources/upgrade_02.png';
 
 const Upgrade = ({ name, onClick, id, imgId }) => {
 
@@ -10,7 +10,7 @@ const Upgrade = ({ name, onClick, id, imgId }) => {
        onClick(id); 
     }
 
-    let imgToDisplay = [null, img01, img02];
+    // let imgToDisplay = [null, img01, img02];
 
     return (   
         <button className={upgradeWrapper} onClick={clickHandler}>

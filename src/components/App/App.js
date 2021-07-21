@@ -86,7 +86,6 @@ const [game, setGame] = useState({
       {/* <TickTimer /> */}
       <div className={rootStyle}>
         {/* <LoginModal status={loginModal} onClose={handleLoginModal} /> */}
-        <div className={bg}>
           <Header 
             isLoggedIn={login} 
             onLog={handleLogin} 
@@ -105,7 +104,6 @@ const [game, setGame] = useState({
 
           {/* <Footer /> */}
         </div>
-      </div>
     </Router>
   );
 }
