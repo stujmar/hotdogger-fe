@@ -6,7 +6,7 @@
     z-index: 0;
     color: white;
     /* Background stuff for all browswers*/
-    background: #FFDD00;
+    background: FF624D;
   }
 
 
@@ -53,7 +53,7 @@
 }
 
 .cta {
-  padding: 100px 50px;
+  padding: 125px 35px;
 }
 
 .loginButton {
@@ -74,6 +74,15 @@
     margin: 50px;
     background: #FFDD00;
   }
+
+  .background {
+    background: #FFDD00;
+  }
+
+  .cta {
+    padding: 125px 55px;
+  }
+  
 }
 
 @media only screen and (min-width: 1000px) {
