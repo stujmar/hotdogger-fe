@@ -3,15 +3,18 @@ import { background, dogImage, gameWrapper, plate, flexParent, leftSection, righ
 
 const DogGame = () => {
     const [ onions, setOnions ] = useState([]);
+    const handleClick = () => {
+        console.log("You clicked that dog");
+    }
 
     return (<React.Fragment>
         <div className={background}>
         <div className={flexParent}>
             <div className={leftSection}></div>
             <div className={plate}>
-                <div className={gameWrapper}>
+                <button onClick={() => handleClick()} className={gameWrapper}>
                     <div className={dogImage}></div>
-                </div>
+                </button>
             </div>
             <div className={rightSection}></div>
         </div>
