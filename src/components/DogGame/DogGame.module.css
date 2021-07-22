@@ -5,8 +5,8 @@
 }
 
 .dogImage {
-    height: 300px;
-    width: 145px;
+    height: 325px;
+    width: 155px;
     background: url(../../resources/hotdog.png);
     background-position: center;
     background-size: cover;
@@ -14,7 +14,8 @@
 
 .gameWrapper {
     margin: 0 auto;
-    height: 300px;
-    width: 145px;
+    height: 325px;
+    width: 155px;
+    border-radius: 25px;
     border: 1px solid white;
 }
