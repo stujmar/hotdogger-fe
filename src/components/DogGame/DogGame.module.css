@@ -3,3 +3,11 @@
     height: 70%;
     background-color: peru;
 }
+
+.dogImage {
+    height: 300px;
+    width: 145px;
+    background: url(../../resources/hotdog.png);
+    background-position: center;
+    background-size: cover;
+}
