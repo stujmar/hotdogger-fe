@@ -16,7 +16,10 @@
   left: 25px;
   position: absolute;
   font-weight: bold;
+  color: #0065AA;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
   font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .getStarted {
