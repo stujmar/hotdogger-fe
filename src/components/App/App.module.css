@@ -1,6 +1,6 @@
 .rootStyle {
     height: 100vh;
-    background: url(../../resources/background.jpg) no-repeat center center fixed;
+    background: url(../../resources/background.png) no-repeat center center fixed;
 }
 
 @media only screen and (min-width: 700px) {
