@@ -28,17 +28,17 @@ export const gameSlice = createSlice({
         setMode: (state, action) => {
             state.mode = action.payload;
         },
-        updateResource: (state, action) => {
+        updateStat: (state, action) => {
             let amount = action.payload.amount;
             switch(action.payload.type) {
-                case 'seeds':
-                    state.resources.seeds = state.resources.seeds + amount;
+                case 'hotdogs':
+                    state.gameStats.hotdogs = state.gameStats.hotdogs + amount;
                     break;
-                case 'water':
-                    state.resources.water = state.resources.water + amount;
+                case 'sauce':
+                    state.gameStats.sauce = state.gameStats.sauce + amount;
                     break;
-                case 'stars':
-                    state.resources.stars = state.resources.stars + amount;
+                case 'toppings':
+                    state.gameStats.toppings = state.gameStats.toppings + amount;
                     break;
                 default:
                     break;
