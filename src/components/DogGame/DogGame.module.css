@@ -53,4 +53,12 @@
     width: 50px;
     height: 50px;
     background:crimson;
+    border-radius: 15px;
+    border: 3px solid rgb(194, 12, 48);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.rightItem:hover, .leftItem:hover {
+    transform: scale(1.025);
+    transition: all .25s;
 }
