@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { updateStat } from '../../redux/gameSlice';
 import { background, dogImage, gameWrapper, plate, flexParent, leftSection, rightSection } from './DogGame.module.css';
 
 const DogGame = () => {
+    const dispatch = useDispatch();
     const [ onions, setOnions ] = useState([]);
+
     const handleClick = () => {
         console.log("You clicked that dog");
+        dispatch(updateStat({type: 'hotdogs', amount: 1}));
     }
 
     return (<React.Fragment>
