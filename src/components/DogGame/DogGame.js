@@ -12,9 +12,9 @@ const DogGame = () => {
         <div className={flexParent}>
             <div className={leftSection}></div>
             <div className={plate}>
-                <button onClick={() => handleClick()} className={gameWrapper}>
-                    <div className={dogImage}></div>
-                </button>
+                <div className={gameWrapper}>
+                    <button type="button" onClick={() => handleClick()} className={dogImage}></button>
+                </div>
             </div>
             <div className={rightSection}></div>
         </div>

@@ -6,6 +6,7 @@
 
 .dogImage {
     margin: 0 auto;
+    display: block;
     height: 325px;
     width: 155px;
     background: url(../../resources/hotdog.png);
