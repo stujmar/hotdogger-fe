@@ -4,7 +4,7 @@ import { updateStat } from '../../redux/gameSlice';
 import {
     background,
     dogImage,
-    gameWrapper,
+    plateInset,
     plate,
     flexParent,
     leftSection, rightSection, leftItem, rightItem
@@ -22,6 +22,7 @@ const DogGame = () => {
     return (<React.Fragment>
         <div className={background}>
             <div className={plate}>
+                <div className={plateInset}>
         <div className={flexParent}>
             <div className={leftSection}>
                 <div className={leftItem}></div>
@@ -30,9 +31,7 @@ const DogGame = () => {
                 <div className={leftItem}></div>
                 <div className={leftItem}></div>
             </div>
-                <div className={gameWrapper}>
                     <button type="button" onClick={() => handleClick()} className={dogImage}></button>
-                </div>
             <div className={rightSection}>
                 <div className={rightItem}></div>
                 <div className={rightItem}></div>
@@ -41,6 +40,7 @@ const DogGame = () => {
                 <div className={rightItem}></div>
             </div>
             </div>
+                </div>
         </div>
         </div>
     </React.Fragment>)

@@ -19,13 +19,13 @@
     transform: scale(1.025);
 }
 
-.gameWrapper {
+.plateInset {
     position: relative;
     height: 325px;
     width: 325px;
     border-radius: 50%;
-    /* background: cornsilk;
-    border: 5px solid rgb(231, 222, 185); */
+    background: cornsilk;
+    border: 5px solid rgb(231, 222, 185);
 }
 
 .plate {
