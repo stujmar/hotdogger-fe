@@ -1,13 +1,11 @@
 .background {
     padding: 50px;
     height: 70%;
-    background-color: rgb(216, 164, 216);
+    background-color: rgb(164, 216, 203);
 }
 
 .dogImage {
-    top: -5px;
-    left: -5px;
-    position: absolute;
+    margin: 0 auto;
     height: 325px;
     width: 155px;
     background: url(../../resources/hotdog.png);
@@ -15,11 +13,16 @@
     background-size: cover;
 }
 
+.dogImage:hover {
+    transition: all .25s;
+    transform: scale(1.025);
+}
+
 .gameWrapper {
     position: relative;
     height: 325px;
-    width: 155px;
-    border-radius: 25px;
+    width: 325px;
+    border-radius: 50%;
     background: cornsilk;
     border: 5px solid rgb(231, 222, 185);
 }
@@ -28,8 +31,8 @@
     margin: 0 auto;
     height: 345px;
     padding: 10px;
-    width: 175px;
-    border-radius: 25px;
+    width: 345px;
+    border-radius: 50%;
     background: rgb(253, 249, 231);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
 }
