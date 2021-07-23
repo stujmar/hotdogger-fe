@@ -21,6 +21,7 @@ const DogGame = () => {
 
     return (<React.Fragment>
         <div className={background}>
+            <div className={plate}>
         <div className={flexParent}>
             <div className={leftSection}>
                 <div className={leftItem}></div>
@@ -29,17 +30,16 @@ const DogGame = () => {
                 <div className={leftItem}></div>
                 <div className={leftItem}></div>
             </div>
-            <div className={plate}>
                 <div className={gameWrapper}>
                     <button type="button" onClick={() => handleClick()} className={dogImage}></button>
                 </div>
-            </div>
             <div className={rightSection}>
                 <div className={rightItem}></div>
                 <div className={rightItem}></div>
                 <div className={rightItem}></div>
                 <div className={rightItem}></div>
                 <div className={rightItem}></div>
+            </div>
             </div>
         </div>
         </div>
