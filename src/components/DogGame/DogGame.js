@@ -7,7 +7,7 @@ import {
     gameWrapper,
     plate,
     flexParent,
-    leftSection, rightSection, leftItem
+    leftSection, rightSection, leftItem, rightItem
     } from './DogGame.module.css';
 
 const DogGame = () => {
@@ -34,7 +34,13 @@ const DogGame = () => {
                     <button type="button" onClick={() => handleClick()} className={dogImage}></button>
                 </div>
             </div>
-            <div className={rightSection}></div>
+            <div className={rightSection}>
+                <div className={rightItem}></div>
+                <div className={rightItem}></div>
+                <div className={rightItem}></div>
+                <div className={rightItem}></div>
+                <div className={rightItem}></div>
+            </div>
         </div>
         </div>
     </React.Fragment>)
