@@ -66,7 +66,7 @@ export const gameSlice = createSlice({
 export const { 
     setMode, 
     updateSeeds,
-    updateResource,
+    updateStat,
     resetResource,
     incrementTime
     } = gameSlice.actions;
