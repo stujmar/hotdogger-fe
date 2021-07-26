@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { updateStat } from '../../redux/gameSlice';
 import {
@@ -13,6 +13,11 @@ import {
 const DogGame = () => {
     const dispatch = useDispatch();
     const [ onions, setOnions ] = useState([]);
+
+    useEffect(() => {
+        /* Onload load up toppings and sauces */
+        console.log('... on load of game ...')
+    },[]);
 
     const handleClick = () => {
         console.log("You clicked that dog");
