@@ -1,3 +1,10 @@
+.footer {
+    bottom: 0;
+    position: fixed;
+    z-index: 90;
+    width: 100%;
+}
+
 .infoBody {
     display: flex;
     justify-content: space-between;
@@ -8,8 +15,8 @@
     color: white;
     bottom: 0px;
     padding: 20px;
+    z-index: 100;
 }
-
 
 .dogCount {
     grid-area: header;
