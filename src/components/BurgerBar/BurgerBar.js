@@ -52,8 +52,8 @@ const BurgerBar = ({ toggle, onClick, isLoggedIn }) => {
                 <button className={`${cart}`}/>
             </div>
         </div>
+            <a href="/game" className={mobileLogo}></a>
         <button onClick={toggleHandler} className={burgerBar}>
-            <div className={mobileLogo}></div>
         <div className={menuStyle}></div>
         </button>
         </Fragment>
