@@ -66,6 +66,12 @@
   text-transform: uppercase;
   font-weight: bold;
   margin: 0 7px;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.336);
+}
+
+.loginButton:hover {
+  background: yellow
 }
 
 @media only screen and (min-width: 700px) {
