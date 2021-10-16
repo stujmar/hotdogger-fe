@@ -20,12 +20,14 @@ const DogGame = () => {
     },[]);
 
     const handleClick = () => {
+        setOnions(onions + 1);
         console.log("You clicked that dog");
         dispatch(updateStat({type: 'hotdogs', amount: 1}));
     }
 
     return (<React.Fragment>
         <div className={background}>
+            {onions}
             <div className={plate}>
                 <div className={plateInset}>
         <div className={flexParent}>
