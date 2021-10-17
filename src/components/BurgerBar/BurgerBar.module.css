@@ -56,14 +56,13 @@
     z-index: 10;
     color: green;
     overflow: auto;
-    padding-top: 20%;
     box-sizing: border-box;
     z-index: 1;
     backdrop-filter: blur(3px);
 } 
 
 .menuItems {
-    /* width: 200px; */
+    padding-top: 75px;
     height: 300px;
     background: #333;
     display: flex;
