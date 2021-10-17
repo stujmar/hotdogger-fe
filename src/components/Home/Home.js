@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory, Redirect } from "react-router-dom";
 
-import  { background, getStarted, dogButton, title, flexHolder, cta } from './Home.module.css'
+import  { getStarted, dogButton, title, flexHolder, cta } from './Home.module.css'
 
 const Home = ({isLoggedIn, onClick}) => {
     const history = useHistory();
