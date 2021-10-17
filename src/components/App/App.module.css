@@ -1,7 +1,10 @@
 .rootStyle {
     height: 100%;
-    background: #FF624D;
     /* background: url(../../resources/background.png) no-repeat center center fixed; */
+}
+
+body {
+    background: #FF624D;
 }
 
 @media only screen and (min-width: 700px) {

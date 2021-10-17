@@ -46,8 +46,6 @@
 
 .flexHolder {
   margin: 0px;
-  background: #FF624D;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.205);
   position: relative;
   display: flex;
   height: 250px;
