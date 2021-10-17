@@ -17,7 +17,6 @@ const Home = ({isLoggedIn, onClick}) => {
     return (
             <div className={flexHolder}>
                 <div className={title}>Welcome to Hot Dogger</div>
-                <div className={`${background}`}></div>
                 <div className={cta}>
                     { isLoggedIn ? null : <Redirect to="/welcome"/>}
                     <button className={getStarted} onClick={clickHandler}>Get Started!</button>
