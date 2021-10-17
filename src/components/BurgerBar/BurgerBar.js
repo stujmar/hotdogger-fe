@@ -52,7 +52,7 @@ const BurgerBar = ({ toggle, onClick, isLoggedIn }) => {
                 <button className={`${cart}`}/>
             </div>
         </div>
-            <a href="/game" className={mobileLogo}><img src="../../resources/logo_mobile.png" alt="hotdogger logo"></img></a>
+            <a href="/game" className={mobileLogo}><img src="images/logo_mobile.png" alt="hotdogger logo"></img></a>
         <button onClick={toggleHandler} className={burgerBar}>
         <div className={menuStyle}></div>
         </button>
